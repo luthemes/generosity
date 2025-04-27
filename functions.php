@@ -6,18 +6,16 @@
  *
  * @package   Generosity
  * @author    Benjamin Lu <benlumia007@gmail.com>
- * @copyright 2023. Benjamin Lu
+ * @copyright 2025 Benjamin Lu
  * @license   https://www.gnu.org/licenses/gpl-2.0.html
- * @link      https://github.com/benlumia007/generosity
+ * @link      https://luthemes.com/portfolio/generosity
  */
 
-# ----------------------------------------------------------------------------------
-# Load composer files
-# ----------------------------------------------------------------------------------
-#
-# Please load the composer files first to ensure that any classes or functions that
-# we may require are available through autoload.
-
-if ( file_exists( get_parent_theme_file_path( '/vendor/autoload.php' ) ) ) {
-	require_once get_parent_theme_file_path( '/vendor/autoload.php' );
-}
+/** ------------------------------------------------------------------------------------------
+ * Bootstrap the theme.
+ * -------------------------------------------------------------------------------------------
+ * Load the bootstrap files. Note that autoload should happen first so that any classes or
+ * functions are available that we might need.
+ */
+require_once get_parent_theme_file_path( 'app/bootstrap-autoload.php' );
+require_once get_parent_theme_file_path( 'app/framework.php' );

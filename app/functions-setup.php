@@ -6,7 +6,7 @@
  *
  * @package   Generosity
  * @author    Benjamin Lu <benlumia007@gmail.com>
- * @copyright 2023. Benjamin Lu
+ * @copyright 2025 Benjamin Lu
  * @license   https://www.gnu.org/licenses/gpl-2.0.html
  * @link      https://github.com/benlumia007/generosity
  */
@@ -60,10 +60,10 @@ add_action( 'init', function() {
 add_action( 'widgets_init', function() {
 
 	$args = [
-		'before_widget' => '<aise id="%1$s" class="widget %2$s">',
+		'before_widget' => '<aside id="%1$s" class="widget %2$s">',
 		'after_widget'  => '</aside>',
-		'before_title'  => '<h3 class="widget_title">',
-		'after_title'   => '</h3>'
+		'before_title'  => '<h3 class="widget-title"><span class="wrap">',
+		'after_title'   => '</span></h3>'
 	];
 
 	$sidebars = [
@@ -81,3 +81,30 @@ add_action( 'widgets_init', function() {
 		register_sidebar( array_merge( $sidebar, $args ) );
 	}
 }, 5 );
+
+/**
+ * Add support for custom header.
+ */
+add_action( 'after_setup_theme', function() {
+
+	add_theme_support( 'custom-header',
+		[
+			'default-text-color' => 'ffffff',
+			'default-image'      => get_theme_file_uri( '/public/images/headers/space-splatters.jpg' ),
+			'height'             => 400,
+			'width'              => 1170,
+			'flex-height'        => true,
+			'flex-width'         => true,
+		]
+	);
+
+	register_default_headers(
+		array(
+			'header-image' => array(
+				'url'           => '%s/public/images/header-image.jpg',
+				'thumbnail_url' => '%s/public/images/header-image.jpg',
+				'description'   => esc_html__( 'Header Image', 'generosity' ),
+			),
+		)
+	);
+} );

@@ -1,19 +1,43 @@
 .content-area {
-	.page,
-	.post {
+	.entry {
 		margin-bottom: 3rem;
 
 		.entry-header {
+			text-align: center;
 			.entry-metadata {
-				font-family: font-family( date );
-				font-size: $text-3xl;
 				margin-bottom: 0.5rem;
 			}
 
 			.entry-title {
 				margin: 0;
 				padding: 0;
+
+				a {
+					color: #000000;;
+				}
+			}
+
+			.entry-metadata {
+				margin-top: -0.5rem;
+
+				svg {
+					height: 15px;
+					width: 15px;
+				}
+
+				.entry-author,
+				.entry-published,
+				.entry-comments {
+					padding-left: 0.25rem;
+					padding-right: 0.5rem;
+				}
+
+				a {
+					color: #cc4a00;
+				}
 			}
 		}
 	}
 }
+
+@import '06.comments';

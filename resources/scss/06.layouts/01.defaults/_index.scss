@@ -10,195 +10,40 @@
 
 .site-container {
 	background: color( white );
-	box-shadow: 0 2px 6px rgba( 100, 100, 100, 0.3 );
-	margin: 3rem auto;
+	border: 1px solid #cc4a00;
+	margin: 1.125rem auto;
 	padding: 1.125rem;
 	max-width: 1170px;
-}
 
-.site-content {
-	margin: 2rem 0;
-}
+	.site-content {
+		margin-top: 1.125rem;
 
-.content-area {
-	float: left;
-	line-height: 1.8rem;
-	width: 70.54673721340388%;
-}
+		.left-sidebar {
 
-.widget-area {
-	float: right;
-	line-height: 1.8rem;
-	width: 24.691358024691358%;
-}
+			.content-area {
+				float: right;
+				width: 68.37606838%;
 
+			}
 
-.widget-area .search-form:before,
-.widget-area .search-form:after {
-	clear: both;
-	content: "";
-	display: table;
-}
+			.widget-area {
+				float: left;
+				width: 28.37606838%;
+			}
+		}
 
-.widget-area .search-form {
-	padding: 0.938em;
-	background: #555;
-	max-width: 100%;
-}
+		.right-sidebar {
 
-.widget-area .search-field {
-	border: none;
-	float: left;
-	font-family: 'Merriweather', serif;
-	font-size: 1em;
-	padding: 0.563em;
-	width: 100%;
-}
+			.content-area {
+				float: left;
+				width: 68.37606838%;
 
-.widget-area .search-submit {
-	border: none;
-	background: #d88f3c;
-	color: #ffffff;
-	float: right;
-	font-family: 'Merriweather', serif;
-	font-size: 1em;
-	display: none;
-	padding: 0.5em;
-	position: relative;
-	width: 30%;
-}
+			}
 
-.widget-area .widget {
-	line-height: 1.8em;
-	margin-bottom: 2.250em;
-	font-size: 0.875em;
-}
-
-.widget ul,
-.widget ol {
-	list-style-type: none;
-	margin: 0;
-	padding: 0;
-}
-
-.widget li {
-	margin: 0.4em 0 0 0;
-}
-
-.widget li li {
-	margin-left: 1.125em;
-}
-
-.widget select {
-	font-family: 'Merriweather', serif;
-	margin: 0.625em 0;
-	padding: 0.5em;
-	width: 100%;
-}
-
-.widget.widget_post_thumbnail {
-	padding-bottom: 0;
-}
-
-.widget-title {
-	line-height: 2.5rem;
-	margin: 0;
-}
-
-.rss-widget-icon {
-	display: none;
-}
-
-.rsswidget {
-	display: block;
-}
-
-.widget_rss cite {
-	display: block;
-	font-size: 0.875em;
-	font-weight: 700;
-	margin-bottom: 1.125em;
-}
-
-.widget-area table {
-	border-collapse: collapse;
-	width: 100%;
-}
-
-.widget-area tr:nth-of-type(odd) {
-	background: #eeeeee;
-}
-
-.widget-area th {
-	background: #333333;
-	color: #ffffff;
-	font-weight: 700;
-}
-
-.widget-area th, td {
-	border: 0.063em solid #cccccc;
-	text-align: left;
-	padding: 0.438em;
-}
-
-.rss-date {
-	font-size: 0.875em;
-}
-
-.rssSummary {
-	margin-top: 10px;
-}
-
-#wp-calendar table {
-	border-collapse: collapse;
-	width: 100%;
-}
-
-#wp-calendar tr:nth-of-type(odd) {
-	background: #eeeeee;
-}
-
-#wp-calendar th {
-	background: #999999;
-	color: #ffffff;
-	font-weight: 700;
-	text-align: center;
-}
-
-#wp-calendar th,
-#wp-calendar td {
-	border: 0.063em solid #cccccc;
-	padding: 0.438em;
-	text-align: center;
-}
-
-#wp-calendar {
-	border: 0.063em solid #cccccc;
-	margin-bottom: 0;
-	text-align: center;
-	width: 100%;
-}
-
-#wp-calendar a {
-	color: #8B0000;
-	font-weight: 700;
-
-	&:hover {
-		color: #000080;
+			.widget-area {
+				float: right;
+				width: 28.37606838%;
+			}
+		}
 	}
-}
-
-#wp-calendar caption {
-	font-weight: 700;
-	margin: 5px 0;
-	text-align: center;
-}
-
-#wp-calendar #today {
-	background: #cccccc;
-	font-weight: 700;
-}
-
-.textwidget {
-	line-height: 1.6em;
 }

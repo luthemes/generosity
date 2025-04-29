@@ -1,0 +1,29 @@
+.widget {
+    margin-top: 1.125rem;
+
+    &:first-child {
+        margin-top: 0;
+    }
+
+    .widget-title { 
+        border-bottom: 0.125rem solid #cc4a00;
+        color: white;
+        margin: 0;
+        padding: 0;
+
+        .wrap {
+            background-color: #cc4a00;
+            padding: 0.25rem 1rem;
+        }
+    }
+
+    ul {
+        list-style-type: none;
+        margin: 0.5rem 0;
+        padding: 0;
+
+        li {
+            line-height: 1.8rem;
+        }
+    }
+}

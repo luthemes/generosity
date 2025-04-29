@@ -4,10 +4,12 @@
  *
  * @package   Generosity
  * @author    Benjamin Lu <benlumia007@gmail.com>
- * @copyright 2023. Benjamin Lu
+ * @copyright 2025 Benjamin Lu
  * @license   https://www.gnu.org/licenses/gpl-2.0.html
- * @link      https://github.com/benlumia007/generosity
+ * @link      https://luthemes.com/portfolio/generosity
  */
+
+use function Backdrop\Fonts\enqueue;
 
 /**
  * Changes the theme template path to the `public/views` folder.
@@ -18,4 +20,19 @@
  */
 add_filter( 'backdrop/template/path', function() {
 	return 'public/views';
+} );
+
+/**
+ * Enqueues specific theme fonts.
+ *
+ * This function enqueues the specified fonts for use in the theme.
+ *
+ * @since  1.0.0
+ * @access public
+ * @return void
+ */
+add_action( 'wp_enqueue_scripts', function() {
+	
+	// Enqueue Fonts
+	enqueue( 'all' );
 } );

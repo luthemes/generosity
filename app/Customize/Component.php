@@ -116,6 +116,7 @@ class Component implements Bootable {
 		$manager->get_section( 'title_tagline' )->title = esc_html__( 'Branding', 'generosity' );
 		$manager->get_section( 'static_front_page' )->panel = 'theme_content';
         $manager->remove_section( 'colors' );
+		$manager->get_section( 'header_image' )->panel = 'theme_header';
 
 
 		foreach ( $this->components as $component ) {

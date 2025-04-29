@@ -1,5 +1,6 @@
 .idea
 node_modules
+public/assets
 vendor
 
 public/mix-manifest.json

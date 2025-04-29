@@ -1,11 +1,12 @@
 {
-	"name"       : "luthemes/generosity",
-	"type"       : "classicpress-theme",
-	"description": "Generosity is a clean and modern theme.",
-	"keywords"   : [ "classicpress", "theme" ],
-	"homepage"   : "https://luthemes.com/portfolio/generosity",
-	"license"    : "GPL-2.0-or-later",
-	"authors"    : [
+	"name": "luthemes/generosity",
+	"type": "classicpress-theme",
+	"description": "Creativity is a next-generation theme designed to work with ClassicPress, offering an ideal experience for showcasing your site's content.",
+	"keywords": [ "classicpress", "theme" ],
+	"homepage": "https://luthemes.com/portfolio/creativity",
+	"license": "GPL-2.0-or-later",
+	"version": "1.0.0",
+	"authors": [
 		{
 			"name": "Benjamin Lu",
 			"email": "benlumia007@gmail.com",
@@ -15,25 +16,26 @@
 	"autoload": {
 		"psr-4": {
 			"Generosity\\": "app"
-		},
-		"files": [
-			"app/Site/functions-site.php",
-			"app/framework.php",
-			"app/functions-extras.php",
-			"app/functions-scripts.php",
-			"app/functions-setup.php"
-		]
+		}
 	},
 	"require": {
-		"php": ">=7.0",
-		"benlumia007/backdrop": "^2.0",
-		"benlumia007/backdrop-customize": "^1.0",
-		"benlumia007/backdrop-fontawesome": "^1.0",
-		"benlumia007/backdrop-fonts": "^1.0",
-		"benlumia007/backdrop-mix-manifest": "^1.0",
-		"benlumia007/backdrop-template-hierarchy": "^1.0",
-		"benlumia007/backdrop-template-manager": "^1.0",
-		"benlumia007/backdrop-template-view": "^1.0",
-		"benlumia007/backdrop-theme": "v1.0.0.x-dev"
+		"php": ">=7.4",
+		"backdrop-dev/framework": "1.0.x-dev",
+		"backdrop-dev/fonts": "dev-develop",
+		"backdrop-dev/mix": "dev-develop"
+	},
+	"require-dev": {
+		"dealerdirect/phpcodesniffer-composer-installer": "*",
+		"wptrt/wpthemereview": "*",
+		"php-parallel-lint/php-parallel-lint": "*"
+	},
+	"scripts": {
+		"lint:wpcs": "@php ./vendor/squizlabs/php_codesniffer/bin/phpcs .",
+		"lint:php": "@php ./vendor/bin/parallel-lint --exclude .git --exclude vendor ."
+	},
+	"config": {
+		"allow-plugins": {
+			"dealerdirect/phpcodesniffer-composer-installer": true
+		}
 	}
 }

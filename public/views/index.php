@@ -1,19 +1,10 @@
 <?php
-/**
- * Default index template
- *
- * @package   Generosity
- * @author    Benjamin Lu <benlumia007@gmail.com>
- * @copyright 2023. Benjamin Lu
- * @license   https://www.gnu.org/licenses/gpl-2.0.html
- * @link      https://github.com/benlumia007/benjlu.com
- */
 
 // Loads header/*.php templates
-Backdrop\Template\View\display( 'header', Backdrop\Template\Hierarchy\hierarchy() );
+Backdrop\View\display( 'header', Backdrop\Template\hierarchy() );
 
 // Loads content/*.php templates
-Backdrop\Template\View\display( 'content', Backdrop\Template\Hierarchy\hierarchy() );
+Backdrop\View\display( 'content', Backdrop\Template\hierarchy() );
 
 // Loads footer/*.php templates
-Backdrop\Template\View\display( 'footer', Backdrop\Template\Hierarchy\hierarchy() );
+Backdrop\View\display( 'footer', Backdrop\Template\hierarchy() );

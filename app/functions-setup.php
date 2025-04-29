@@ -91,20 +91,18 @@ add_action( 'after_setup_theme', function() {
 		[
 			'default-text-color' => 'ffffff',
 			'default-image'      => get_theme_file_uri( '/public/images/headers/space-splatters.jpg' ),
-			'height'             => 400,
+			'height'             => 350,
 			'width'              => 1170,
 			'flex-height'        => true,
 			'flex-width'         => true,
 		]
 	);
 
-	register_default_headers(
-		array(
-			'header-image' => array(
-				'url'           => '%s/public/images/header-image.jpg',
-				'thumbnail_url' => '%s/public/images/header-image.jpg',
-				'description'   => esc_html__( 'Header Image', 'generosity' ),
-			),
-		)
-	);
+	register_default_headers( [
+		'horizon' => [
+			'url'           => '%s/public/images/headers/horizon.jpg',
+			'thumbnail_url' => '%s/public/images/headers/horizon.jpg',
+			'description'   => esc_html__( 'Horizon', 'generosity' ),
+		]
+	] );
 } );

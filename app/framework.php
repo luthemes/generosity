@@ -39,6 +39,7 @@ $theme->provider( Backdrop\Mix\Provider::class );
 # features to the theme.
 $theme->provider( Generosity\Provider::class );
 $theme->provider( Generosity\Customize\Provider::class );
+$theme->provider( Generosity\Footer\Provider::class );
 $theme->provider( Generosity\Layout\Provider::class );
 # ------------------------------------------------------------------------------
 # Perform bootstrap actions.

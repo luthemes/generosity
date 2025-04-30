@@ -11,14 +11,17 @@
  * @link      https://luthemes.com/portfolio/generosity
  */
 
-return [
+ return [
     'left-sidebar' => [
         'label' => __( 'Left Sidebar', 'generosity' ),
+        'url'   => '%s/public/images/layouts/2cl.png',
     ],
     'right-sidebar' => [
         'label' => __( 'Right Sidebar', 'generosity' ),
+        'url'   => '%s/public/images/layouts/2cr.png',
     ],
     'no-sidebar' => [
         'label' => __( 'No Sidebar', 'generosity' ),
+        'url'   => '%s/public/images/layouts/1col.png',
     ]
 ];

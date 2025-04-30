@@ -23,7 +23,7 @@ use Backdrop\App;
 /**
  * Layout customize class.
  *
- * @since  2.1.0
+ * @since  1.0.0
  * @access public
  */
 class Customize extends Customizable {
@@ -31,7 +31,7 @@ class Customize extends Customizable {
 	/**
 	 * App layouts object.
 	 *
-	 * @since  2.1.0
+	 * @since  1.0.0
 	 * @access protected
 	 * @var    Layouts
 	 */
@@ -40,7 +40,7 @@ class Customize extends Customizable {
 	/**
 	 * Registers customizer sections.
 	 *
-	 * @since  2.1.0
+	 * @since  1.0.0
 	 * @access public
 	 * @param  WP_Customize_Manager  $manager
 	 * @return void
@@ -56,7 +56,7 @@ class Customize extends Customizable {
 	/**
 	 * Registers customizer settings.
 	 *
-	 * @since  2.1.0
+	 * @since  1.0.0
 	 * @access public
 	 * @param  WP_Customize_Manager  $manager
 	 * @return void
@@ -73,7 +73,7 @@ class Customize extends Customizable {
 	/**
 	 * Registers customizer controls.
 	 *
-	 * @since  2.1.0
+	 * @since  1.0.0
 	 * @access public
 	 * @param  WP_Customize_Manager  $manager
 	 * @return void
@@ -92,7 +92,7 @@ class Customize extends Customizable {
 	/**
 	 * Registers customizer partials.
 	 *
-	 * @since  2.1.0
+	 * @since  1.0.0
 	 * @access public
 	 * @param  WP_Customize_Manager  $manager
 	 * @return void
@@ -104,7 +104,7 @@ class Customize extends Customizable {
 	/**
 	* Registers JSON for the customize controls script via `wp_localize_script()`.
 	*
-	* @since  2.1.0
+	* @since  1.0.0
 	* @access public
 	* @param  Collection  $json
 	* @return void
@@ -116,7 +116,7 @@ class Customize extends Customizable {
 	/**
 	* Registers JSON for the customize preview script via `wp_localize_script()`.
 	*
-	* @since  2.1.0
+	* @since  1.0.0
 	* @access public
 	* @param  Collection  $json
 	* @return void

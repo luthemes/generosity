@@ -19,6 +19,7 @@ use Generosity\Template\FeaturedImage;
 use Generosity\Tools\Collection;
 use Generosity\Tools\Mod;
 use Backdrop\App;
+use Backdrop\Customize\Controls\RadioImage;
 
 /**
  * Layout customize class.
@@ -46,10 +47,11 @@ class Customize extends Customizable {
 	 * @return void
 	 */
 	public function registerSections( WP_Customize_Manager $manager ) {
-		$manager->add_section( 'theme_global_layout', [
+
+		$manager->add_section( 'theme_content_layout', [
 			'panel'    => 'theme_content',
 			'title'    => __( 'Layout', 'generosity' ),
-			'priority' => 5
+			'priority' => 10
 		] );
 	}
 
@@ -68,6 +70,13 @@ class Customize extends Customizable {
 			'sanitize_callback' => 'sanitize_key',
 			'transport'         => 'postMessage'
 		] );
+
+		$manager->add_setting( 'theme_content_width', [
+			'default'           => 'normal',
+			'sanitize_callback' => 'sanitize_key',
+			'transport'         => 'postMessage',
+		] );
+		
 	}
 
 	/**
@@ -80,14 +89,30 @@ class Customize extends Customizable {
 	 */
 	public function registerControls( WP_Customize_Manager $manager ) {
 
-		$manager->add_control( 'theme_content_layout', [
-			'section'     => 'theme_global_layout',
-			'type'        => 'select',
-			'label'       => __( 'Global Layout', 'generosity' ),
-			'description' => __( 'Select the layout used across the site.', 'generosity' ),
-			'choices'     => $this->app_layouts->customizeChoices()
-		] );
+			// Add the layout control.
+			$manager->add_control( new RadioImage( $manager, 'theme_content_layout', [
+				'label'    => esc_html__( 'Layout', 'jt' ),
+				'section'  => 'theme_content_layout',
+				'choices'  => $this->app_layouts->customizeChoices(),
+			] ) );
+
+			$manager->add_control( 'theme_content_width', [
+				'label'    => __( 'Content Width', 'generosity' ),
+				'section'  => 'theme_content_layout',
+				'type'     => 'select',
+				'choices'  => [
+					'narrow' => __( 'Narrow', 'generosity' ),
+					'normal' => __( 'Normal', 'generosity' ),
+					'wide'   => __( 'Wide', 'generosity' ),
+				],
+				'active_callback' => function () {
+					return get_theme_mod( 'theme_content_layout' ) === 'no-sidebar';
+				},
+			] );
+			
+	
 	}
+	
 
 	/**
 	 * Registers customizer partials.

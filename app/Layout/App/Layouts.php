@@ -46,13 +46,15 @@ class Layouts extends Collection {
 	 * @return array
 	 */
 	public function customizeChoices() {
-
 		$choices = [];
-
+	
 		foreach ( $this->all() as $layout ) {
-			$choices[ $layout->name() ] = $layout->label();
+			$choices[ $layout->name() ] = [
+				'label' => $layout->label(),
+				'url'   => $layout->url(),
+			];
 		}
-
+	
 		return $choices;
-	}
+	}	
 }

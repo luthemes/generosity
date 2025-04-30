@@ -42,6 +42,15 @@ class Layout implements JsonSerializable {
 	protected $label;
 
 	/**
+	 * Setting url.
+	 *
+	 * @since  1.0.0
+	 * @access protected
+	 * @var    string
+	 */
+	protected $url;
+
+	/**
 	 * Set up the object properties.
 	 *
 	 * @since  1.0.0
@@ -102,5 +111,16 @@ class Layout implements JsonSerializable {
 			$this->label ?: $this->name(),
 			$this
 		);
+	}
+
+	/**
+	 * Returns the choice url.
+	 *
+	 * @since  1.0.0
+	 * @access public
+	 * @return string
+	 */
+	public function url() {
+		return $this->url;
 	}
 }

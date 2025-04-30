@@ -16,6 +16,7 @@
  * @link      https://luthemes.com/portfolio/generosity
  */
 
+use function Backdrop\is_classicpress;
 return [
 
 	# ----------------------------------------------------------------------
@@ -42,5 +43,19 @@ return [
 	# ----------------------------------------------------------------------
 	#
 	# Handles the footer theme mods.
+	'theme_footer_powered_by' => false,
+
+	'theme_footer_custom_credit' => function() {
+		$year = gmdate( 'Y' ); // Get the current year
+		$copyright = sprintf( __( "&#169; %1\$s. %2\$s.", 'generosity' ), $year, Backdrop\Site\render_home_link() );
+
+		if ( is_classicpress() ) {
+			$footer_text = sprintf( __( "Powered by %1\$s and %2\$s.", 'generosity' ), Backdrop\Site\render_cp_link(), Backdrop\Site\render_theme_link() );
+		} else {
+			$footer_text = sprintf( __( "Powered by %1\$s and %2\$s.", 'generosity' ), Backdrop\Site\render_wp_link(), Backdrop\Site\render_theme_link() );
+		}
+
+		return $copyright . ' <br /> ' . $footer_text;
+	},
 
 ];

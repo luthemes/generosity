@@ -91,7 +91,7 @@ class Customize extends Customizable {
 
 			// Add the layout control.
 			$manager->add_control( new RadioImage( $manager, 'theme_content_layout', [
-				'label'    => esc_html__( 'Layout', 'jt' ),
+				'label'    => esc_html__( 'Layout', 'generosity' ),
 				'section'  => 'theme_content_layout',
 				'choices'  => $this->app_layouts->customizeChoices(),
 			] ) );

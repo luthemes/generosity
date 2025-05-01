@@ -40,7 +40,7 @@ class Svg {
 	 * @return void
 	 */
 	public static function display( $group, $name ) {
-		echo static::render( $group, $name );
+		echo static::render( $group, $name ); //phpcs:ignore
 	}
 
 	/**

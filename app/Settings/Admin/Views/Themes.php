@@ -18,7 +18,7 @@ use Generosity\Settings\ThemeManager\Themes as ThemeCollection;
 /**
  * Child Themes settings view class.
  *
- * @since  1.2.0
+ * @since  1.0.0
  * @access public
  */
 class Themes extends View {
@@ -26,7 +26,7 @@ class Themes extends View {
 	/**
 	 * Collection of themes.
 	 *
-	 * @since  1.2.0
+	 * @since  1.0.0
 	 * @access protected
 	 * @var    ThemeCollection
 	 */
@@ -35,7 +35,7 @@ class Themes extends View {
 	/**
 	 * Returns the view name/ID.
 	 *
-	 * @since  1.2.0
+	 * @since  1.0.0
 	 * @access public
 	 * @return string
 	 */
@@ -46,7 +46,7 @@ class Themes extends View {
 	/**
 	 * Returns the internationalized, human-readable view label.
 	 *
-	 * @since  1.2.0
+	 * @since  1.0.0
 	 * @access public
 	 * @return string
 	 */
@@ -58,7 +58,7 @@ class Themes extends View {
 	 * Called on the `admin_init` hook and should be used to register theme
 	 * settings via the Settings API.
 	 *
-	 * @since  1.2.0
+	 * @since  1.0.0
 	 * @access public
 	 * @return void
 	 */
@@ -72,7 +72,7 @@ class Themes extends View {
 	 * Called on the `load-{$page}` hook when the view is booted. Use this
 	 * to add any actions or filters needed.
 	 *
-	 * @since  1.2.0
+	 * @since  1.0.0
 	 * @access public
 	 * @return void
 	 */
@@ -85,7 +85,7 @@ class Themes extends View {
 	/**
 	 * Registers default settings sections.
 	 *
-	 * @since  1.2.0
+	 * @since  1.0.0
 	 * @access public
 	 * @param  ThemeCollection  $themes
 	 * @return void
@@ -113,7 +113,7 @@ class Themes extends View {
 	/**
 	 * Renders the settings page.
 	 *
-	 * @since  1.2.0
+	 * @since  1.0.0
 	 * @access public
 	 * @return void
 	 */

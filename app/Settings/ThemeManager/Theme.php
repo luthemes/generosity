@@ -18,7 +18,7 @@ use WP_Theme;
 /**
  * Theme class.
  *
- * @since  1.2.0
+ * @since  1.0.0
  * @access public
  */
 class Theme {
@@ -26,7 +26,7 @@ class Theme {
 	/**
 	 * Theme name.
 	 *
-	 * @since  1.2.0
+	 * @since  1.0.0
 	 * @access protected
 	 * @var    string
 	 */
@@ -35,7 +35,7 @@ class Theme {
 	/**
 	 * Theme label.
 	 *
-	 * @since  1.2.0
+	 * @since  1.0.0
 	 * @access protected
 	 * @var    string
 	 */
@@ -44,7 +44,7 @@ class Theme {
 	/**
 	 * Download URL.
 	 *
-	 * @since  1.2.0
+	 * @since  1.0.0
 	 * @access protected
 	 * @var    string
 	 */
@@ -53,7 +53,7 @@ class Theme {
 	/**
 	 * Screenshot URL.
 	 *
-	 * @since  1.2.0
+	 * @since  1.0.0
 	 * @access protected
 	 * @var    string
 	 */
@@ -62,7 +62,7 @@ class Theme {
 	/**
 	 * `WP_Theme` object.
 	 *
-	 * @since  1.2.0
+	 * @since  1.0.0
 	 * @access protected
 	 * @var    WP_Theme
 	 */
@@ -71,7 +71,7 @@ class Theme {
 	/**
 	 * Set up the object properties.
 	 *
-	 * @since  1.2.0
+	 * @since  1.0.0
 	 * @access public
 	 * @param  string  $name
 	 * @param  array   $options
@@ -96,7 +96,7 @@ class Theme {
 	/**
 	 * Returns the name.
 	 *
-	 * @since  1.2.0
+	 * @since  1.0.0
 	 * @access public
 	 * @return string
 	 */
@@ -107,7 +107,7 @@ class Theme {
 	/**
 	 * Returns the label.
 	 *
-	 * @since  1.2.0
+	 * @since  1.0.0
 	 * @access public
 	 * @return string
 	 */
@@ -118,7 +118,7 @@ class Theme {
 	/**
 	 * Conditional to check if theme is installed.
 	 *
-	 * @since  1.2.0
+	 * @since  1.0.0
 	 * @access public
 	 * @return bool
 	 */
@@ -129,7 +129,7 @@ class Theme {
 	/**
 	 * Conditional to check if the theme is active.
 	 *
-	 * @since  1.2.0
+	 * @since  1.0.0
 	 * @access public
 	 * @return string
 	 */
@@ -140,7 +140,7 @@ class Theme {
 	/**
 	 * Returns the screenshot URL.
 	 *
-	 * @since  1.2.0
+	 * @since  1.0.0
 	 * @access public
 	 * @return string
 	 */
@@ -164,7 +164,7 @@ class Theme {
 	/**
 	 * Returns the download URL.
 	 *
-	 * @since  1.2.0
+	 * @since  1.0.0
 	 * @access public
 	 * @return string
 	 */
@@ -175,7 +175,7 @@ class Theme {
 	/**
 	 * Returns the activation URL.
 	 *
-	 * @since  1.2.0
+	 * @since  1.0.0
 	 * @access public
 	 * @return string
 	 */
@@ -197,7 +197,7 @@ class Theme {
 	/**
 	 * Returns the customize URL.
 	 *
-	 * @since  1.2.0
+	 * @since  1.0.0
 	 * @access public
 	 * @return string
 	 */
@@ -218,7 +218,7 @@ class Theme {
 	/**
 	 * Displays the theme "card".
 	 *
-	 * @since  1.2.0
+	 * @since  1.0.0
 	 * @access public
 	 * @return void
 	 */
@@ -257,7 +257,7 @@ class Theme {
 	/**
 	 * Returns an array of theme action links.
 	 *
-	 * @since  1.2.0
+	 * @since  1.0.0
 	 * @access private
 	 * @return array
 	 */

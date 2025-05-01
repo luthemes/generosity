@@ -1,12 +1,37 @@
 .site-header {
-	.site-branding {
-		.site-header-title {
-			margin: 0;
-			padding: 0;
+	&__container {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		gap: 1.125rem;
+	}
 
-			a {
-				color: #000000;
-			}
+	&__branding {
+		display: flex;
+		align-items: center;
+	}
+
+	&__sep {
+		margin-top: 0.5rem;
+		margin-left: 0.5rem;
+		margin-right: 0.5rem;
+	}
+
+	&__title {
+		font-size: 1.75rem;
+		margin: 0;
+		padding: 0;
+
+		&-link {
+			color: #000000;
+			font-family: font-family( heading );
+			font-weight: 700;
 		}
+	}
+
+	&__description {
+		font-size: 14px;
+		margin: 0.5rem 0 0 0;
+		padding: 0;
 	}
 }

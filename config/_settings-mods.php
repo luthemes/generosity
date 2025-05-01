@@ -17,6 +17,7 @@
  */
 
 use function Backdrop\is_classicpress;
+
 return [
 
 	# ----------------------------------------------------------------------
@@ -24,6 +25,9 @@ return [
 	# ----------------------------------------------------------------------
 	#
 	# Handles the global theme mods.
+	
+	// Branding separator (see `config/character-entities.php` for options).
+	'branding_sep' => '&#183;',
 
 	# ----------------------------------------------------------------------
 	# Theme: Header

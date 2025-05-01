@@ -38,9 +38,11 @@ $theme->provider( Backdrop\Mix\Provider::class );
 # operate before booting the application. These providers offer supplementary
 # features to the theme.
 $theme->provider( Generosity\Provider::class );
+$theme->provider( Generosity\CleanCP\Provider::class );
 $theme->provider( Generosity\Customize\Provider::class );
 $theme->provider( Generosity\Footer\Provider::class );
 $theme->provider( Generosity\Layout\Provider::class );
+$theme->provider( Generosity\Settings\Provider::class );
 # ------------------------------------------------------------------------------
 # Perform bootstrap actions.
 # ------------------------------------------------------------------------------

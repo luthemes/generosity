@@ -51,7 +51,7 @@ class Themes extends View {
 	 * @return string
 	 */
 	public function label() {
-		return __( 'Themes', 'amicable' );
+		return __( 'Themes', 'generosity' );
 	}
 
 	/**

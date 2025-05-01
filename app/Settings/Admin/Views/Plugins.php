@@ -51,7 +51,7 @@ class Plugins extends View {
 	 * @return string
 	 */
 	public function label() {
-		return __( 'Plugins', 'amicable' );
+		return __( 'Plugins', 'generosity' );
 	}
 
 	/**

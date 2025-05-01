@@ -79,7 +79,7 @@ class Component implements Bootable {
 	/**
 	 * Registers default loop layouts.
 	 *
-	 * @since  2.1.0
+	 * @since  1.0.0
 	 * @access public
 	 * @param  Layouts  $layouts
 	 * @return void

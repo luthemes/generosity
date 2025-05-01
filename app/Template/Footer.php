@@ -33,7 +33,7 @@ class Footer {
 	 */
 	public static function displayCredit() {
 
-		echo static::renderCredit(); // phpcs:ignore
+		echo static::renderCredit(); // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped
 	}
 
 	/**
@@ -46,7 +46,7 @@ class Footer {
 	public static function renderCredit( array $args = [] ) {
 
 		$args = wp_parse_args( $args, [
-			'before' => '<p class="site-footer-credit">',
+			'before' => '<p class="site-footer__credit">',
 			'after'  => '</p>'
 		] );
 

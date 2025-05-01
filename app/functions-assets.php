@@ -29,9 +29,7 @@ add_action( 'wp_enqueue_scripts', function() {
 
 	// Enqueue theme scripts
 	wp_enqueue_script( 'generosity-app', asset( 'assets/js/app.js' ), [ 'jquery' ], null, true );
-
-	wp_enqueue_script( 'generosity-navigation', asset( 'assets/js/navigation.js' ), null, null, true );
-	wp_localize_script( 'generosity-navigation', 'generosityScreenReaderText', [
+	wp_localize_script( 'generosity-app', 'generosityScreenReaderText', [
 		'expand'   => '<span class="screen-reader-text">' . esc_html__( 'expand child menu', 'generosity' ) . '</span>',
 		'collapse' => '<span class="screen-reader-text">' . esc_html__( 'collapse child menu', 'generosity' ) . '</span>',
 	] );

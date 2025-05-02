@@ -4,11 +4,11 @@
  *
  * Abstract base class for creating views.
  *
- * @package   Amicable
+ * @package   Generosity
  * @author    Benjamin Lu <benlumia007@gmail.com>
- * @copyright 2024 Benjamin Lu
+ * @copyright 2025 Benjamin Lu
  * @license   https://www.gnu.org/licenses/gpl-2.0.html
- * @link      https://luthemes.com/portfolio/amicable
+ * @link      https://luthemes.com/portfolio/generosity
  */
 
 namespace Generosity\Settings\Admin\Views;

@@ -4,11 +4,11 @@
  *
  * Displays the child themes view (tab) on the settings page.
  *
- * @package   Amicable
+ * @package   Generosity
  * @author    Benjamin Lu <benlumia007@gmail.com>
- * @copyright 2024 Benjamin Lu
+ * @copyright 2025 Benjamin Lu
  * @license   https://www.gnu.org/licenses/gpl-2.0.html
- * @link      https://luthemes.com/portfolio/amicable
+ * @link      https://luthemes.com/portfolio/generosity
  */
 
 namespace Generosity\Settings\Admin\Views;
@@ -65,7 +65,7 @@ class Themes extends View {
 	public function register() {
 
 		// Register child themes.
-		add_action( 'amicable/settings/admin/view/themes/register', [ $this, 'registerDefaultThemes' ] );
+		add_action( 'generosity/settings/admin/view/themes/register', [ $this, 'registerDefaultThemes' ] );
 	}
 
 	/**
@@ -79,7 +79,7 @@ class Themes extends View {
 	public function boot() {
 		$this->themes = new ThemeCollection();
 
-		do_action( 'amicable/settings/admin/view/themes/register', $this->themes );
+		do_action( 'generosity/settings/admin/view/themes/register', $this->themes );
 	}
 
 	/**

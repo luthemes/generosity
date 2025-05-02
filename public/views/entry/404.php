@@ -1,4 +1,4 @@
-<article class="post-0">
+<article class="post-0 entry">
 
 	<div class="entry-header">
 		<h1 class="entry-title"><?php esc_html_e( 'Whoah, partner!', 'generosity' ) ?></h1>

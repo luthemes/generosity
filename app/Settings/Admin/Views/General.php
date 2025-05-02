@@ -356,25 +356,4 @@ class General extends View {
 		</form>
 
 	<?php }
-
-	/**
-	 * Displays the home posts number field.
-	 *
-	 * @since      1.0.0
-	 * @deprecated 2.1.0
-	 * @access     public
-	 * @return     void
-	 */
-	public function fieldHomePostsNumber() {}
-
-	/**
-	 * Displays the archive posts number field.
-	 *
-	 * @since      1.0.0
-	 * @deprecated 2.1.0
-	 * @access     public
-	 * @return     void
-	 */
-	public function fieldArchivePostsNumber() {}
-
 }

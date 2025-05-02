@@ -1,30 +1,31 @@
-<?php
-/**
- * Default header template
- *
- * @package   Generosity
- * @author    Benjamin Lu <benlumia007@gmail.com>
- * @copyright 2023. Benjamin Lu
- * @license   https://www.gnu.org/licenses/gpl-2.0.html
- * @link      https://github.com/benlumia007/generosity
- */
-?>
 <!doctype html>
-<html <?php language_attributes(); ?>>
+<html <?php Backdrop\Attr\display( 'html' ); ?>>
 <head>
-<meta charset="<?php bloginfo( 'charset' ); ?>" />
-<meta name="viewport" content="width=device-width, initial-scale=1" />
-<link rel="profile" href="https://gmpg.org/xfn/11" />
 <?php wp_head(); ?>
 </head>
-<body <?php body_class(); ?>>
+<body <?php Backdrop\Attr\display( 'body' ); ?>>
 <?php wp_body_open(); ?>
 <div id="container" class="site-container">
 	<a class="skip-link screen-reader-text" href="#main"><?php esc_html_e( 'Skip to content', 'generosity' ); ?></a>
 	<header id="masthead" class="site-header">
-		<div class="site-branding">
-			<?php Backdrop\Theme\Site\display_site_title(); ?>
-			<?php Backdrop\Theme\Site\display_site_description(); ?>
+		<div class="site-header__container">
+			<div class="site-header__branding">
+				<?php Backdrop\Site\display_title( [
+					'class' => 'site-header__title',
+					'link_class' => 'site-header__title-link'
+				] ); ?>
+				<?php
+					$tagline = get_bloginfo( 'description' );
+
+					if ( ! empty( $tagline ) ) {
+						if ( $sep = Generosity\Tools\Mod::get( 'branding_sep' ) ) : ?>
+							<span class="site-header__sep" aria-hidden="true"><?php echo esc_html( $sep ) ?></span>
+						<?php endif;
+						Backdrop\Site\display_description( [ 'class' => 'site-header__description' ] ); 
+					}
+				?>
+			</div>
+			<?php Backdrop\View\display( 'menu', 'primary', [ 'location' => 'primary'] ); ?>
 		</div>
-		<?php Backdrop\Template\View\display( 'menu', 'primary', [ 'location' => 'primary'] ); ?>
+		<?php the_custom_header_markup(); ?>
 	</header>

@@ -1,5 +1,5 @@
 <section id="content" class="site-content">
-	<div id="global-layout" class="<?php echo esc_attr( Generosity\Tools\Mod::get( 'theme_content_layout' ) ); ?>">
+	<div id="global-layout" <?php Backdrop\Attr\display( Generosity\Tools\Mod::get( 'theme_content_layout' ) ); ?>>
 		<main id="main" class="content-area">
 			<?php
 			if ( have_posts() ) :

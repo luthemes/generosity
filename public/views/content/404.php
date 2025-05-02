@@ -1,17 +1,17 @@
-<?php
-/**
- * Default default template
- *
- * @package   Succotash
- * @author    Benjamin Lu <benlumia007@gmail.com>
- * @copyright 2014-2022. Benjamin Lu
- * @license   https://www.gnu.org/licenses/gpl-2.0.html
- * @link      https://github.com/benlumia007/luthemes.com
- */
-?>
 <section id="content" class="site-content">
-	<main id="main" class="content-area">
-		<?php Backdrop\Template\View\display( 'entry/404' ); ?>
-	</main>
-	<?php Backdrop\Template\View\display( 'sidebar', 'primary', [ 'location' => 'primary' ] ); ?>
+<div id="global-layout" <?php Backdrop\Attr\display( Generosity\Tools\Mod::get( 'theme_content_layout' ) ); ?>>
+		<main id="main" class="content-area">
+			<?php $error->setup(); ?>
+			<article id="post-0" class="page">
+				<header class="entry-header">
+					<h1 class="entry-title"><?php $error->displayTitle(); ?></h1>
+				</header>
+				<div class="entry-content">
+					<?php $error->displayContent(); ?>
+				</div>
+			</article>
+			<?php $error->reset(); ?>
+		</main>
+		<?php Backdrop\View\display( 'sidebar', 'primary', [ 'location' => 'primary' ] ); ?>
+	</div>
 </section>

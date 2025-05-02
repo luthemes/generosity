@@ -42,6 +42,8 @@ return [
 	# Handles the content theme mods.
 	'theme_content_layout' => 'left-sidebar',
 
+	'featured_image_size' => 'generosity-landscape-medium',
+
 	# ----------------------------------------------------------------------
 	# Theme: Footer
 	# ----------------------------------------------------------------------

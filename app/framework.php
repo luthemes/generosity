@@ -40,6 +40,7 @@ $theme->provider( Backdrop\Mix\Provider::class );
 $theme->provider( Generosity\Provider::class );
 $theme->provider( Generosity\CleanCP\Provider::class );
 $theme->provider( Generosity\Customize\Provider::class );
+$theme->provider( Generosity\Image\Provider::class );
 $theme->provider( Generosity\Footer\Provider::class );
 $theme->provider( Generosity\Layout\Provider::class );
 $theme->provider( Generosity\Settings\Provider::class );

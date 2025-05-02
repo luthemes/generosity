@@ -16,6 +16,7 @@ namespace Generosity\Customize;
 use Backdrop\Tools\Collection;
 use Backdrop\Core\ServiceProvider;
 
+use Generosity\Image;
 use Generosity\Layout;
 use Generosity\Footer;
 
@@ -38,6 +39,7 @@ class Provider extends ServiceProvider {
 
 		$this->app->singleton( Component::class, function() {
 			return new Component( [
+				Image\Customize::class,
 				Footer\Customize::class,
 				Layout\Customize::class,
 			] );

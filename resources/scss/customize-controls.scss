@@ -1,0 +1,41 @@
+.radio-image-control {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 1rem;
+	margin-top: 1rem;
+}
+
+.radio-image {
+	display: inline-block;
+	cursor: pointer;
+	position: relative;
+}
+
+.radio-image input[type="radio"] {
+	display: none;
+}
+
+.radio-image__image {
+	border: 2px solid transparent;
+	border-radius: 4px;
+	max-width: 120px;
+	height: auto;
+	transition: border-color 0.2s ease;
+}
+
+.radio-image__radio:checked + .radio-image__label + .radio-image__image {
+	border-color: #0073aa; /* WordPress blue */
+	box-shadow: 0 0 0 2px #0073aa33;
+}
+
+.radio-image__label {
+	display: block;
+	margin-top: 0.25rem;
+	text-align: center;
+	font-size: 0.85rem;
+	color: #555;
+}
+
+#customize-control-theme_content_width {
+	display: none;
+}

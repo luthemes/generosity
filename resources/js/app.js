@@ -11,14 +11,4 @@
  * @link      https://luthemes.com/portfolio/generosity
  */
 
-/**
- * A simple immediately-invoked function expression to kick-start
- * things and encapsulate our code.
- *
- * @since  1.0.0
- * @access public
- * @return void
- */
-( function( $ ) {
-
-} )( jQuery );
+import { navigation } from './app/navigation';

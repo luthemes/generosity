@@ -4,11 +4,11 @@
 	color: grey;
 	padding: 0.5rem;
 
-	.site-info 
-
-	a { 
-		color: white;
-		text-decoration-thickness: 2px;
-		text-decoration: underline;
+	&__info {
+		a {
+			color: white;
+			text-decoration-thickness: 2px;
+			text-decoration: underline;
+		}
 	}
 }

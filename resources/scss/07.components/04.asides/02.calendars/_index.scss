@@ -33,6 +33,9 @@
     #wp-calendar a {
         color: color( navy );
         font-weight: bold;
+        text-decoration: underline;
+        text-decoration-thickness: 2px;
+        text-underline-offset: 2px;
     }
 
     #wp-calendar caption {

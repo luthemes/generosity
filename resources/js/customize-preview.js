@@ -4,11 +4,12 @@
  * This imports all modules for the customize preview panel. The final result
  * gets saved back into `public/js/customize-preview.js`.
  *
- * @package   Exhale
- * @author    Justin Tadlock <justintadlock@gmail.com>
- * @copyright 2019 Justin Tadlock
- * @license   https://www.gnu.org/licenses/gpl-2.0.html GPL-2.0-or-later
- * @link      https://themehybrid.com/themes/exhale
+ * @package   Generosity
+ * @author    Benjamin Lu <benlumia007@gmail.com>
+ * @copyright 2025 Benjamin Lu
+ * @license   https://www.gnu.org/licenses/gpl-2.0.html
+ * @link      https://luthemes.com/portfolio/generosity
  */
 
-import { layouts }           from './customize-preview/layouts';
+import { footer } from './customize-preview/footer';
+import { layouts } from './customize-preview/layouts';

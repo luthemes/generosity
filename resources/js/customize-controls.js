@@ -1,0 +1,1 @@
+import { footer } from './customize-controls/footer';

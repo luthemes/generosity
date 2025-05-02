@@ -8,41 +8,82 @@
 /// @link   https://luthemes.com/portfolio/generosity
 ////
 
-.site-container {
-	background: color( white );
-	border: 1px solid #cc4a00;
-	margin: 1.125rem auto;
-	padding: 1.125rem;
-	max-width: 1170px;
-
-	.site-content {
-		margin-top: 1.125rem;
-
-		.left-sidebar {
-
-			.content-area {
-				float: right;
-				width: 68.37606838%;
-
-			}
-
-			.widget-area {
-				float: left;
-				width: 28.37606838%;
-			}
+@media screen and ( max-width: 480px ) {
+	.site-container {
+		background: color( white );
+		border: 1px solid #cc4a00;
+		margin: 1.125rem;
+		padding: 1.125rem;
+	
+		.site-content {
+			margin-top: 1.125rem;
 		}
+	}
+}
 
-		.right-sidebar {
+@media screen and ( min-width: 481px ) and ( max-width: 600px ) {
+	.site-container {
+		background: color( white );
+		border: 1px solid #cc4a00;
+		margin: 1.125rem;
+		padding: 1.125rem;
+	
+		.site-content {
+			margin-top: 1.125rem;
+		}
+	}
+}
 
-			.content-area {
-				float: left;
-				width: 68.37606838%;
+@media screen and ( min-width: 601px ) and ( max-width: 768px ) {
+	.site-container {
+		background: color( white );
+		border: 1px solid #cc4a00;
+		margin: 1.125rem;
+		padding: 1.125rem;
+	
+		.site-content {
+			margin-top: 1.125rem;
+		}
+	}
+}
 
+@media screen and ( min-width: 769px ) {
+	.site-container {
+		background: color( white );
+		border: 1px solid #cc4a00;
+		margin: 1.125rem auto;
+		padding: 1.125rem;
+		max-width: 1170px;
+	
+		.site-content {
+			margin-top: 1.125rem;
+	
+			.left-sidebar {
+	
+				.content-area {
+					float: right;
+					width: 70.67137809%;
+	
+				}
+	
+				.widget-area {
+					float: left;
+					width: 26.50176678%;
+				}
 			}
-
-			.widget-area {
-				float: right;
-				width: 28.37606838%;
+	
+			.right-sidebar {
+	
+				.content-area {
+					float: left;
+					width: 70.67137809%;
+	
+				}
+	
+				.widget-area {
+					float: right;
+					width: 26.50176678%;
+				}
 			}
 		}
 	}

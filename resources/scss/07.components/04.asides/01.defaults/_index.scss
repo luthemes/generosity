@@ -8,12 +8,15 @@
     .widget-title { 
         border-bottom: 0.125rem solid #cc4a00;
         color: white;
+        display: block;
         margin: 0;
         padding: 0;
 
         .wrap {
             background-color: #cc4a00;
-            padding: 0.25rem 1rem;
+            padding: 0 1rem;
+            display: inline-block;
+
         }
     }
 

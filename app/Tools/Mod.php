@@ -21,7 +21,7 @@ use function Backdrop\Theme\mod;
 /**
  * Theme mod class.
  *
- * @since  1.0.0
+ * @since  0.0.1
  * @access public
  */
 class Mod {
@@ -29,7 +29,7 @@ class Mod {
 	/**
 	 * Returns a theme mod value.
 	 *
-	 * @since  1.0.0
+	 * @since  0.0.1
 	 * @access public
 	 * @param  string  $name
 	 * @param  mixed   $default

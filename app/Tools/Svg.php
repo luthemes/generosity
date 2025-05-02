@@ -18,7 +18,7 @@ class Svg {
 	/**
 	 * Returns the SVG file contents.
 	 *
-	 * @since  1.0.0
+	 * @since  0.0.1
 	 * @access public
 	 * @param  string  $group
 	 * @param  string  $name
@@ -33,7 +33,7 @@ class Svg {
 	/**
 	 * Displays the SVG.
 	 *
-	 * @since  1.0.0
+	 * @since  0.0.1
 	 * @access public
 	 * @param  string  $group
 	 * @param  string  $name
@@ -46,7 +46,7 @@ class Svg {
 	/**
 	 * Returns the path to the SVG folder or file if set.
 	 *
-	 * @since  1.0.0
+	 * @since  0.0.1
 	 * @access public
 	 * @param  string  $group
 	 * @param  string  $file

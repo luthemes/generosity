@@ -21,7 +21,7 @@ use Backdrop\Tools\Collection as CollectionBase;
 /**
  * Collection class.
  *
- * @since  1.0.0
+ * @since  0.0.1
  * @access public
  */
 class Collection extends CollectionBase implements JsonSerializable {
@@ -29,7 +29,7 @@ class Collection extends CollectionBase implements JsonSerializable {
 	/**
 	 * Returns a JSON-ready array of data.
 	 *
-	 * @since  1.0.0
+	 * @since  0.0.1
 	 * @access public
 	 * @return array
 	 */

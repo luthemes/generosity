@@ -18,7 +18,7 @@ use Generosity\Tools\Collection;
 /**
  * Layouts class.
  *
- * @since  1.0.0
+ * @since  0.0.1
  * @access public
  */
 class Layouts extends Collection {
@@ -26,7 +26,7 @@ class Layouts extends Collection {
 	/**
 	 * Adds a new layout to the collection.
 	 *
-	 * @since  1.0.0
+	 * @since  0.0.1
 	 * @access public
 	 * @param  string  $name
 	 * @param  array   $value
@@ -41,7 +41,7 @@ class Layouts extends Collection {
 	/**
 	 * Returns an array of the choices for the customizer control.
 	 *
-	 * @since  1.0.0
+	 * @since  0.0.1
 	 * @access public
 	 * @return array
 	 */

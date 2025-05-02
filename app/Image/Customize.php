@@ -28,7 +28,7 @@ class Customize extends Customizable {
 	/**
 	 * App layouts object.
 	 *
-	 * @since  1.0.0
+	 * @since  0.0.1
 	 * @access protected
 	 * @var    Layouts
 	 */
@@ -37,7 +37,7 @@ class Customize extends Customizable {
 	/**
 	 * Registers customizer sections.
 	 *
-	 * @since  1.0.0
+	 * @since  0.0.1
 	 * @access public
 	 * @param  WP_Customize_Manager  $manager
 	 * @return void
@@ -53,7 +53,7 @@ class Customize extends Customizable {
 	/**
 	 * Registers customizer settings.
 	 *
-	 * @since  1.0.0
+	 * @since  0.0.1
 	 * @access public
 	 * @param  WP_Customize_Manager  $manager
 	 * @return void
@@ -71,7 +71,7 @@ class Customize extends Customizable {
 	/**
 	 * Registers customizer controls.
 	 *
-	 * @since  1.0.0
+	 * @since  0.0.1
 	 * @access public
 	 * @param  WP_Customize_Manager  $manager
 	 * @return void

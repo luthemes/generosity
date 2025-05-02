@@ -18,7 +18,7 @@ use Generosity\Tools\Collection;
 /**
  * Themes class.
  *
- * @since  1.0.0
+ * @since  0.0.1
  * @access public
  */
 class Themes extends Collection {
@@ -26,7 +26,7 @@ class Themes extends Collection {
 	/**
 	 * Adds a new theme to the collection.
 	 *
-	 * @since  1.0.0
+	 * @since  0.0.1
 	 * @access public
 	 * @param  string  $name
 	 * @param  array   $value

@@ -18,7 +18,7 @@ use Generosity\Settings\PluginManager\Plugins as PluginCollection;
 /**
  * Plugins settings view class.
  *
- * @since  1.0.0
+ * @since  0.0.1
  * @access public
  */
 class Plugins extends View {
@@ -26,7 +26,7 @@ class Plugins extends View {
 	/**
 	 * Collection of plugins.
 	 *
-	 * @since  1.0.0
+	 * @since  0.0.1
 	 * @access protected
 	 * @var    PluginCollection
 	 */
@@ -35,7 +35,7 @@ class Plugins extends View {
 	/**
 	 * Returns the view name/ID.
 	 *
-	 * @since  1.0.0
+	 * @since  0.0.1
 	 * @access public
 	 * @return string
 	 */
@@ -46,7 +46,7 @@ class Plugins extends View {
 	/**
 	 * Returns the internationalized, human-readable view label.
 	 *
-	 * @since  1.0.0
+	 * @since  0.0.1
 	 * @access public
 	 * @return string
 	 */
@@ -58,7 +58,7 @@ class Plugins extends View {
 	 * Called on the `admin_init` hook and should be used to register plugin
 	 * settings via the Settings API.
 	 *
-	 * @since  1.0.0
+	 * @since  0.0.1
 	 * @access public
 	 * @return void
 	 */
@@ -72,7 +72,7 @@ class Plugins extends View {
 	 * Called on the `load-{$page}` hook when the view is booted. Use this
 	 * to add any actions or filters needed.
 	 *
-	 * @since  1.0.0
+	 * @since  0.0.1
 	 * @access public
 	 * @return void
 	 */
@@ -85,7 +85,7 @@ class Plugins extends View {
 	/**
 	 * Registers default settings sections.
 	 *
-	 * @since  1.0.0
+	 * @since  0.0.1
 	 * @access public
 	 * @param  PluginCollection  $plugins
 	 * @return void
@@ -117,7 +117,7 @@ class Plugins extends View {
 	/**
 	 * Renders the settings page.
 	 *
-	 * @since  1.0.0
+	 * @since  0.0.1
 	 * @access public
 	 * @return void
 	 */

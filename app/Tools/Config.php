@@ -16,7 +16,7 @@ namespace Generosity\Tools;
 /**
  * Config class.
  *
- * @since  1.0.0
+ * @since  0.0.1
  * @access public
  */
 class Config {
@@ -25,7 +25,7 @@ class Config {
 	 * Includes and returns a given PHP config file. The file must return
 	 * an array.
 	 *
-	 * @since  1.0.0
+	 * @since  0.0.1
 	 * @access public
 	 * @param  string  $name
 	 * @return array
@@ -40,7 +40,7 @@ class Config {
 	/**
 	 * Returns the config path or file path if set.
 	 *
-	 * @since  1.0.0
+	 * @since  0.0.1
 	 * @access public
 	 * @param  string  $file
 	 * @return string

@@ -19,7 +19,7 @@ use function Backdrop\is_classicpress;
 /**
  * General settings view class.
  *
- * @since  1.0.0
+ * @since  0.0.1
  * @access public
  */
 class General extends View {
@@ -34,7 +34,7 @@ class General extends View {
 	/**
 	 * Returns the view name/ID.
 	 *
-	 * @since  1.0.0
+	 * @since  0.0.1
 	 * @access public
 	 * @return string
 	 */
@@ -45,7 +45,7 @@ class General extends View {
 	/**
 	 * Returns the internationalized, human-readable view label.
 	 *
-	 * @since  1.0.0
+	 * @since  0.0.1
 	 * @access public
 	 * @return string
 	 */
@@ -58,7 +58,7 @@ class General extends View {
 	 * Called on the `admin_init` hook and should be used to register theme
 	 * settings via the Settings API.
 	 *
-	 * @since  1.0.0
+	 * @since  0.0.1
 	 * @access public
 	 * @return void
 	 */
@@ -79,7 +79,7 @@ class General extends View {
 	 * Called on the `load-{$page}` hook when the view is booted. Use this
 	 * to add any actions or filters needed.
 	 *
-	 * @since  1.0.0
+	 * @since  0.0.1
 	 * @access public
 	 * @return void
 	 */
@@ -90,7 +90,7 @@ class General extends View {
 	/**
 	 * Validates the settings.
 	 *
-	 * @since  1.0.0
+	 * @since  0.0.1
 	 * @access public
 	 * @param  array  $input
 	 * @return array
@@ -112,7 +112,7 @@ class General extends View {
 	/**
 	 * Registers default settings sections.
 	 *
-	 * @since  1.0.0
+	 * @since  0.0.1
 	 * @access public
 	 * @return void
 	 */
@@ -146,7 +146,7 @@ class General extends View {
 	/**
 	 * Registers default settings fields.
 	 *
-	 * @since  1.0.0
+	 * @since  0.0.1
 	 * @access public
 	 * @return void
 	 */
@@ -195,7 +195,7 @@ class General extends View {
 	/**
 	 * Displays the reading section.
 	 *
-	 * @since  1.0.0
+	 * @since  0.0.1
 	 * @access public
 	 * @return void
 	 */
@@ -209,7 +209,7 @@ class General extends View {
 	/**
 	 * Displays the clean WP section.
 	 *
-	 * @since  1.0.0
+	 * @since  0.0.1
 	 * @access public
 	 * @return void
 	 */
@@ -224,7 +224,7 @@ class General extends View {
 	/**
 	 * Displays the 404 error page field.
 	 *
-	 * @since  1.0.0
+	 * @since  0.0.1
 	 * @access public
 	 * @return void
 	 */
@@ -275,7 +275,7 @@ class General extends View {
 	/**
 	 * Displays the emoji field.
 	 *
-	 * @since  1.0.0
+	 * @since  0.0.1
 	 * @access public
 	 * @return void
 	 */
@@ -297,7 +297,7 @@ class General extends View {
 	/**
 	 * Displays the toolbar field.
 	 *
-	 * @since  1.0.0
+	 * @since  0.0.1
 	 * @access public
 	 * @return void
 	 */
@@ -318,7 +318,7 @@ class General extends View {
 	/**
 	 * Displays the embeds field.
 	 *
-	 * @since  1.0.0
+	 * @since  0.0.1
 	 * @access public
 	 * @return void
 	 */
@@ -342,7 +342,7 @@ class General extends View {
 	/**
 	 * Renders the settings page.
 	 *
-	 * @since  1.0.0
+	 * @since  0.0.1
 	 * @access public
 	 * @return void
 	 */

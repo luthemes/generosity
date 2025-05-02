@@ -18,7 +18,7 @@ use Generosity\Tools\Collection;
 /**
  * Image sizes class.
  *
- * @since  1.0.0
+ * @since  0.0.1
  * @access public
  */
 class Sizes extends Collection {
@@ -26,7 +26,7 @@ class Sizes extends Collection {
 	/**
 	 * Adds a new image size to the collection.
 	 *
-	 * @since  1.0.0
+	 * @since  0.0.1
 	 * @access public
 	 * @param  string  $name
 	 * @param  array   $value

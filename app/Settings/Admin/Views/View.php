@@ -18,7 +18,7 @@ use Generosity\Settings\Admin\OptionsPage;
 /**
  * View class.
  *
- * @since  1.0.0
+ * @since  0.0.1
  * @access public
  */
 abstract class View {
@@ -26,7 +26,7 @@ abstract class View {
 	/**
 	 * Returns the view name/ID.
 	 *
-	 * @since  1.0.0
+	 * @since  0.0.1
 	 * @access public
 	 * @return string
 	 */
@@ -35,7 +35,7 @@ abstract class View {
 	/**
 	 * Returns the internationalized, human-readable view label.
 	 *
-	 * @since  1.0.0
+	 * @since  0.0.1
 	 * @access public
 	 * @return string
 	 */
@@ -45,7 +45,7 @@ abstract class View {
 	 * Called on the `admin_init` hook and should be used to register theme
 	 * settings via the Settings API.
 	 *
-	 * @since  1.0.0
+	 * @since  0.0.1
 	 * @access public
 	 * @return void
 	 */
@@ -55,7 +55,7 @@ abstract class View {
 	 * Called on the `load-{$page}` hook when the view is booted. Use this
 	 * to add any actions or filters needed.
 	 *
-	 * @since  1.0.0
+	 * @since  0.0.1
 	 * @access public
 	 * @return void
 	 */
@@ -64,7 +64,7 @@ abstract class View {
 	/**
 	 * Called when the page's HTML is output for the view.
 	 *
-	 * @since  1.0.0
+	 * @since  0.0.1
 	 * @access public
 	 * @return void
 	 */

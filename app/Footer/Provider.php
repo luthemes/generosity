@@ -18,7 +18,7 @@ use Backdrop\Core\ServiceProvider;
 /**
  * Footer service provider class.
  *
- * @since  1.0.0
+ * @since  0.0.1
  * @access public
  */
 class Provider extends ServiceProvider {
@@ -26,7 +26,7 @@ class Provider extends ServiceProvider {
 	/**
 	 * Binds components to the container.
 	 *
-	 * @since  1.0.0
+	 * @since  0.0.1
 	 * @access public
 	 * @return void
 	 */

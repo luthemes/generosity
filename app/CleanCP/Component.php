@@ -19,7 +19,7 @@ use Generosity\Settings\Options;
 /**
  * Clean WP component class.
  *
- * @since  1.0.0
+ * @since  0.0.1
  * @access public
  */
 class Component implements Bootable {
@@ -27,7 +27,7 @@ class Component implements Bootable {
 	/**
 	 * Bootstraps the class' actions/filters.
 	 *
-	 * @since  1.0.0
+	 * @since  0.0.1
 	 * @access public
 	 * @return void
 	 */
@@ -51,7 +51,7 @@ class Component implements Bootable {
 	/**
 	 * Dequeues the embed JavaScript.
 	 *
-	 * @since  1.0.0
+	 * @since  0.0.1
 	 * @access public
 	 * @return void
 	 */

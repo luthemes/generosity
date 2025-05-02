@@ -17,7 +17,7 @@ namespace Generosity;
 /**
  * Returns the metadata separator.
  *
- * @since  1.0.0
+ * @since  0.0.1
  * @access public
  * @param  string  $sep  String to separate metadata.
  * @return string

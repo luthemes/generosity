@@ -18,7 +18,7 @@ use Backdrop\Core\ServiceProvider;
 /**
  * Image service provider class.
  *
- * @since  1.0.0
+ * @since  0.0.1
  * @access public
  */
 class Provider extends ServiceProvider {
@@ -26,7 +26,7 @@ class Provider extends ServiceProvider {
 	/**
 	 * Binds image component to the container.
 	 *
-	 * @since  1.0.0
+	 * @since  0.0.1
 	 * @access public
 	 * @return void
 	 */
@@ -52,7 +52,7 @@ class Provider extends ServiceProvider {
 	/**
 	 * Bootstrap the image size component.
 	 *
-	 * @since  1.0.0
+	 * @since  0.0.1
 	 * @access public
 	 * @return void
 	 */

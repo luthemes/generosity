@@ -20,7 +20,7 @@ use Generosity\Tools\Collection;
 /**
  * Customizable class.
  *
- * @since  1.0.0
+ * @since  0.0.1
  * @access public
  */
 abstract class Customizable {
@@ -30,7 +30,7 @@ abstract class Customizable {
 	 * contains a key that matches a property of the sub-class, its value
 	 * gets assigned to that property.
 	 *
-	 * @since  1.0.0
+	 * @since  0.0.1
 	 * @access public
 	 * @param  array  $data
 	 * @return void
@@ -47,7 +47,7 @@ abstract class Customizable {
 	/**
 	 * Registers customizer panels.
 	 *
-	 * @since  1.0.0
+	 * @since  0.0.1
 	 * @access public
 	 * @param  WP_Customize_Manager  $manager
 	 * @return void
@@ -57,7 +57,7 @@ abstract class Customizable {
 	/**
 	 * Registers customizer sections.
 	 *
-	 * @since  1.0.0
+	 * @since  0.0.1
 	 * @access public
 	 * @param  WP_Customize_Manager  $manager
 	 * @return void
@@ -67,7 +67,7 @@ abstract class Customizable {
 	/**
 	 * Registers customizer settings.
 	 *
-	 * @since  1.0.0
+	 * @since  0.0.1
 	 * @access public
 	 * @param  WP_Customize_Manager  $manager
 	 * @return void
@@ -77,7 +77,7 @@ abstract class Customizable {
 	/**
 	 * Registers customizer controls.
 	 *
-	 * @since  1.0.0
+	 * @since  0.0.1
 	 * @access public
 	 * @param  WP_Customize_Manager  $manager
 	 * @return void
@@ -87,7 +87,7 @@ abstract class Customizable {
 	/**
 	 * Registers customizer partials.
 	 *
-	 * @since  1.0.0
+	 * @since  0.0.1
 	 * @access public
 	 * @param  WP_Customize_Manager  $manager
 	 * @return void
@@ -99,7 +99,7 @@ abstract class Customizable {
 	* Objects added to the collection should implement the `JsonSerializable`
 	* interface.
 	*
-	* @since  1.0.0
+	* @since  0.0.1
 	* @access public
 	* @param  Collection  $json
 	* @return void
@@ -111,7 +111,7 @@ abstract class Customizable {
 	* Objects added to the collection should implement the `JsonSerializable`
 	* interface.
 	*
-	* @since  1.0.0
+	* @since  0.0.1
 	* @access public
 	* @param  Collection  $json
 	* @return void

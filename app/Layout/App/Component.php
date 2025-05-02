@@ -19,7 +19,7 @@ use Generosity\Tools\Config;
 /**
  * Layout component class.
  *
- * @since  1.0.0
+ * @since  0.0.1
  * @access public
  */
 class Component implements Bootable {
@@ -27,7 +27,7 @@ class Component implements Bootable {
 	/**
 	 * Stores the layouts object.
 	 *
-	 * @since  1.0.0
+	 * @since  0.0.1
 	 * @access protected
 	 * @var    Layouts
 	 */
@@ -36,7 +36,7 @@ class Component implements Bootable {
 	/**
 	 * Creates the component object.
 	 *
-	 * @since  1.0.0
+	 * @since  0.0.1
 	 * @access public
 	 * @param  Layouts  $global
 	 * @param  Layouts  $loop
@@ -50,7 +50,7 @@ class Component implements Bootable {
 	/**
 	 * Bootstraps the component.
 	 *
-	 * @since  1.0.0
+	 * @since  0.0.1
 	 * @access public
 	 * @return void
 	 */
@@ -66,7 +66,7 @@ class Component implements Bootable {
 	/**
 	 * Runs the register actions.
 	 *
-	 * @since  1.0.0
+	 * @since  0.0.1
 	 * @access public
 	 * @return void
 	 */
@@ -79,7 +79,7 @@ class Component implements Bootable {
 	/**
 	 * Registers default loop layouts.
 	 *
-	 * @since  1.0.0
+	 * @since  0.0.1
 	 * @access public
 	 * @param  Layouts  $layouts
 	 * @return void

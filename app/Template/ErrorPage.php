@@ -20,7 +20,7 @@ use function Backdrop\Post\render_title;
 /**
  * Error page class.
  *
- * @since  1.0.0
+ * @since  0.0.1
  * @access public
  */
 class ErrorPage {
@@ -28,7 +28,7 @@ class ErrorPage {
 	/**
 	 * The post object for the page selected as the error page.
 	 *
-	 * @since  1.0.0
+	 * @since  0.0.1
 	 * @access protected
 	 * @var    \WP_Post|null
 	 */
@@ -37,7 +37,7 @@ class ErrorPage {
 	/**
 	 * Creates a new error page object.
 	 *
-	 * @since  1.0.0
+	 * @since  0.0.1
 	 * @access public
 	 * @return void
 	 */
@@ -53,7 +53,7 @@ class ErrorPage {
 	/**
 	 * Whether a post object exists.
 	 *
-	 * @since  1.0.0
+	 * @since  0.0.1
 	 * @access public
 	 * @return bool
 	 */
@@ -65,7 +65,7 @@ class ErrorPage {
 	 * Runs `setup_postdata()` b/c we're running this outside of The Loop
 	 * and need to have a global `$post` object.
 	 *
-	 * @since  1.0.0
+	 * @since  0.0.1
 	 * @access public
 	 * @return self
 	 */
@@ -83,7 +83,7 @@ class ErrorPage {
 	/**
 	 * Resets the global `$post` object.
 	 *
-	 * @since  1.0.0
+	 * @since  0.0.1
 	 * @access public
 	 * @return void
 	 */
@@ -97,7 +97,7 @@ class ErrorPage {
 	/**
 	 * Displays the error page title.
 	 *
-	 * @since  1.0.0
+	 * @since  0.0.1
 	 * @access public
 	 * @return void
 	 */
@@ -120,7 +120,7 @@ class ErrorPage {
 	/**
 	 * Displays the error page content.
 	 *
-	 * @since  1.0.0
+	 * @since  0.0.1
 	 * @access public
 	 * @return void
 	 */

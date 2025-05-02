@@ -30,7 +30,7 @@ class Customize extends Customizable {
 	/**
 	 * Registers customizer sections.
 	 *
-	 * @since  1.0.0
+	 * @since  0.0.1
 	 * @access public
 	 * @param  WP_Customize_Manager  $manager
 	 * @return void

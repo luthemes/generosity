@@ -17,7 +17,7 @@ namespace Generosity\Tools;
 /**
  * Powered by class.
  *
- * @since  1.0.0
+ * @since  0.0.1
  * @access public
  */
 class PoweredBy {
@@ -25,7 +25,7 @@ class PoweredBy {
 	/**
 	 * Returns an array of all the powered by quotes.
 	 *
-	 * @since  1.0.0
+	 * @since  0.0.1
 	 * @access public
 	 * @return array
 	 */
@@ -64,7 +64,7 @@ class PoweredBy {
 	/**
 	 * Displays a random powered by quote.
 	 *
-	 * @since  1.0.0
+	 * @since  0.0.1
 	 * @access public
 	 * @return void
 	 */
@@ -76,7 +76,7 @@ class PoweredBy {
 	/**
 	 * Returns a random powered by quote.
 	 *
-	 * @since  1.0.0
+	 * @since  0.0.1
 	 * @access public
 	 * @return string
 	 */

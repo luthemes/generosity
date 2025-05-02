@@ -17,7 +17,7 @@ use Backdrop\Core\ServiceProvider;
 /**
  * Layout service provider class.
  *
- * @since  1.0.0
+ * @since  0.0.1
  * @access public
  */
 class Provider extends ServiceProvider {
@@ -25,7 +25,7 @@ class Provider extends ServiceProvider {
 	/**
 	 * Binds layout components to the container.
 	 *
-	 * @since  1.0.0
+	 * @since  0.0.1
 	 * @access public
 	 * @return void
 	 */
@@ -47,7 +47,7 @@ class Provider extends ServiceProvider {
 	/**
 	 * Bootstrap the layout family component.
 	 *
-	 * @since  1.0.0
+	 * @since  0.0.1
 	 * @access public
 	 * @return void
 	 */

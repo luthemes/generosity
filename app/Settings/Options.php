@@ -16,7 +16,7 @@ namespace Generosity\Settings;
 /**
  * Options class.
  *
- * @since  1.0.0
+ * @since  0.0.1
  * @access public
  */
 class Options {
@@ -24,7 +24,7 @@ class Options {
 	/**
 	 * Gets a theme option by name. If name is omitted, returns all options.
 	 *
-	 * @since  1.0.0
+	 * @since  0.0.1
 	 * @access public
 	 * @param  string  $name
 	 * @return mixed
@@ -44,7 +44,7 @@ class Options {
 	/**
 	 * Returns an array of all default options.
 	 *
-	 * @since  1.0.0
+	 * @since  0.0.1
 	 * @access public
 	 * @return array
 	 */

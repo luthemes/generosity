@@ -15,7 +15,7 @@
  * A simple immediately-invoked function expression to kick-start
  * things and encapsulate our code.
  *
- * @since  1.0.0
+ * @since  0.0.1
  * @access public
  * @return void
  */

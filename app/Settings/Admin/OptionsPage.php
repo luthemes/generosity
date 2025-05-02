@@ -20,7 +20,7 @@ use function Backdrop\Mix\asset;
 /**
  * Options page class.
  *
- * @since  1.0.0
+ * @since  0.0.1
  * @access public
  */
 class OptionsPage implements Bootable {
@@ -28,7 +28,7 @@ class OptionsPage implements Bootable {
 	/**
 	 * Settings page name/slug.
 	 *
-	 * @since  1.0.0
+	 * @since  0.0.1
 	 * @access protected
 	 * @var    string
 	 */
@@ -37,7 +37,7 @@ class OptionsPage implements Bootable {
 	/**
 	 * Collection of views to display.
 	 *
-	 * @since  1.0.0
+	 * @since  0.0.1
 	 * @access protected
 	 * @var    Views\Views
 	 */
@@ -46,7 +46,7 @@ class OptionsPage implements Bootable {
 	/**
 	 * Internationalized text label for the page.
 	 *
-	 * @since  1.0.0
+	 * @since  0.0.1
 	 * @access protected
 	 * @var    string
 	 */
@@ -55,7 +55,7 @@ class OptionsPage implements Bootable {
 	/**
 	 * Required capability for accessing the page.
 	 *
-	 * @since  1.0.0
+	 * @since  0.0.1
 	 * @access protected
 	 * @var    string
 	 */
@@ -64,7 +64,7 @@ class OptionsPage implements Bootable {
 	/**
 	 * The settings page defined by WordPress.
 	 *
-	 * @since  1.0.0
+	 * @since  0.0.1
 	 * @access protected
 	 * @var    string
 	 */
@@ -73,7 +73,7 @@ class OptionsPage implements Bootable {
 	/**
 	 * Creates the settings page object.
 	 *
-	 * @since  1.0.0
+	 * @since  0.0.1
 	 * @access public
 	 * @param  string       $name
 	 * @param  Views\Views  $views
@@ -96,7 +96,7 @@ class OptionsPage implements Bootable {
 	/**
 	 * Bootstraps the options page.
 	 *
-	 * @since  1.0.0
+	 * @since  0.0.1
 	 * @access public
 	 * @return void
 	 */
@@ -107,7 +107,7 @@ class OptionsPage implements Bootable {
 	/**
 	 * Adds the settings page to WordPress.
 	 *
-	 * @since  1.0.0
+	 * @since  0.0.1
 	 * @access public
 	 * @return void
 	 */
@@ -131,7 +131,7 @@ class OptionsPage implements Bootable {
 	/**
 	 * Called on `admin_init` to register views.
 	 *
-	 * @since  1.0.0
+	 * @since  0.0.1
 	 * @access public
 	 * @return void
 	 */
@@ -147,7 +147,7 @@ class OptionsPage implements Bootable {
 	/**
 	 * Called on `load-{$this->page}`. Primarily for booting the current view.
 	 *
-	 * @since  1.0.0
+	 * @since  0.0.1
 	 * @access public
 	 * @return void
 	 */
@@ -168,7 +168,7 @@ class OptionsPage implements Bootable {
 	/**
 	 * Print styles to the header.
 	 *
-	 * @since  1.0.0
+	 * @since  0.0.1
 	 * @access public
 	 * @return void
 	 */
@@ -190,7 +190,7 @@ class OptionsPage implements Bootable {
 	/**
 	 * Outputs the settings page to the screen.
 	 *
-	 * @since  1.0.0
+	 * @since  0.0.1
 	 * @access public
 	 * @return void
 	 */
@@ -214,7 +214,7 @@ class OptionsPage implements Bootable {
 	/**
 	 * Displays the filter links (tabs) bar at the top of the page.
 	 *
-	 * @since  1.0.0
+	 * @since  0.0.1
 	 * @access public
 	 * @return void
 	 */
@@ -253,7 +253,7 @@ class OptionsPage implements Bootable {
 	/**
 	 * Adds a view.
 	 *
-	 * @since  1.0.0
+	 * @since  0.0.1
 	 * @access public
 	 * @param  string|object  $view
 	 * @return void
@@ -270,7 +270,7 @@ class OptionsPage implements Bootable {
 	/**
 	 * Resolves a view in the case that it is a string and not an object.
 	 *
-	 * @since  1.0.0
+	 * @since  0.0.1
 	 * @access public
 	 * @param  string
 	 * @return Views\View
@@ -282,7 +282,7 @@ class OptionsPage implements Bootable {
 	/**
 	 * Calls a view's `register()` method.
 	 *
-	 * @since  1.0.0
+	 * @since  0.0.1
 	 * @access public
 	 * @param  Views\View $view
 	 * @return void
@@ -297,7 +297,7 @@ class OptionsPage implements Bootable {
 	/**
 	 * Calls a view's `boot()` method.
 	 *
-	 * @since  1.0.0
+	 * @since  0.0.1
 	 * @access public
 	 * @param  Views\View $view
 	 * @return void
@@ -312,7 +312,7 @@ class OptionsPage implements Bootable {
 	/**
 	 * Returns the collection of views.
 	 *
-	 * @since  1.0.0
+	 * @since  0.0.1
 	 * @access public
 	 * @return Views\Views
 	 */
@@ -324,7 +324,7 @@ class OptionsPage implements Bootable {
 	/**
 	 * Registers all views.
 	 *
-	 * @since  1.0.0
+	 * @since  0.0.1
 	 * @access public
 	 * @return void
 	 */
@@ -338,7 +338,7 @@ class OptionsPage implements Bootable {
 	/**
 	 * Boots all views.
 	 *
-	 * @since  1.0.0
+	 * @since  0.0.1
 	 * @access public
 	 * @return void
 	 */
@@ -352,7 +352,7 @@ class OptionsPage implements Bootable {
 	/**
 	 * Returns the current view object or `null`.
 	 *
-	 * @since  1.0.0
+	 * @since  0.0.1
 	 * @access public
 	 * @return null|Views\View
 	 */

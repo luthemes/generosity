@@ -18,7 +18,7 @@ use JsonSerializable;
 /**
  * Layout class.
  *
- * @since  1.0.0
+ * @since  0.0.1
  * @access public
  */
 class Layout implements JsonSerializable {
@@ -26,7 +26,7 @@ class Layout implements JsonSerializable {
 	/**
 	 * Setting name.
 	 *
-	 * @since  1.0.0
+	 * @since  0.0.1
 	 * @access protected
 	 * @var    string
 	 */
@@ -35,7 +35,7 @@ class Layout implements JsonSerializable {
 	/**
 	 * Setting label.
 	 *
-	 * @since  1.0.0
+	 * @since  0.0.1
 	 * @access protected
 	 * @var    string
 	 */
@@ -44,7 +44,7 @@ class Layout implements JsonSerializable {
 	/**
 	 * Setting url.
 	 *
-	 * @since  1.0.0
+	 * @since  0.0.1
 	 * @access protected
 	 * @var    string
 	 */
@@ -53,7 +53,7 @@ class Layout implements JsonSerializable {
 	/**
 	 * Set up the object properties.
 	 *
-	 * @since  1.0.0
+	 * @since  0.0.1
 	 * @access public
 	 * @param  string  $name
 	 * @param  array   $options
@@ -75,7 +75,7 @@ class Layout implements JsonSerializable {
 	 * Returns a JSON-ready array of only the properties we'll need for use
 	 * in the customize-preview JS.
 	 *
-	 * @since  1.0.0
+	 * @since  0.0.1
 	 * @access public
 	 * @return array
 	 */
@@ -89,7 +89,7 @@ class Layout implements JsonSerializable {
 	/**
 	 * Returns the choice name.
 	 *
-	 * @since  1.0.0
+	 * @since  0.0.1
 	 * @access public
 	 * @return string
 	 */
@@ -100,7 +100,7 @@ class Layout implements JsonSerializable {
 	/**
 	 * Returns the choice label.
 	 *
-	 * @since  1.0.0
+	 * @since  0.0.1
 	 * @access public
 	 * @return string
 	 */
@@ -116,7 +116,7 @@ class Layout implements JsonSerializable {
 	/**
 	 * Returns the choice url.
 	 *
-	 * @since  1.0.0
+	 * @since  0.0.1
 	 * @access public
 	 * @return string
 	 */

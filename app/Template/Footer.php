@@ -19,7 +19,7 @@ use Generosity\Tools\PoweredBy;
 /**
  * Powered by class.
  *
- * @since  1.0.0
+ * @since  0.0.1
  * @access public
  */
 class Footer {
@@ -27,7 +27,7 @@ class Footer {
 	/**
 	 * Displays a random powered by quote.
 	 *
-	 * @since  1.0.0
+	 * @since  0.0.1
 	 * @access public
 	 * @return void
 	 */
@@ -39,7 +39,7 @@ class Footer {
 	/**
 	 * Returns a random powered by quote.
 	 *
-	 * @since  1.0.0
+	 * @since  0.0.1
 	 * @access public
 	 * @return string
 	 */
@@ -63,7 +63,7 @@ class Footer {
 	/**
 	 * Returns an array of allowed tags in footer text.
 	 *
-	 * @since  1.0.0
+	 * @since  0.0.1
 	 * @access public
 	 * @return array
 	 */

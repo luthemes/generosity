@@ -18,7 +18,7 @@ use Backdrop\Tools\Collection;
 /**
  * Views class.
  *
- * @since  1.0.0
+ * @since  0.0.1
  * @access public
  */
 class Views extends Collection {
@@ -26,7 +26,7 @@ class Views extends Collection {
 	/**
 	 * Adds a new view to the collection.
 	 *
-	 * @since  1.0.0
+	 * @since  0.0.1
 	 * @access public
 	 * @param  string  $name
 	 * @param  array   $value

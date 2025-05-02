@@ -20,7 +20,7 @@ use Generosity\Settings\Admin\Views\Views;
 /**
  * Settings provider class.
  *
- * @since  1.0.0
+ * @since  0.0.1
  * @access public
  */
 class Provider extends ServiceProvider {
@@ -28,7 +28,7 @@ class Provider extends ServiceProvider {
 	/**
 	 * Binds settings component to the container.
 	 *
-	 * @since  1.0.0
+	 * @since  0.0.1
 	 * @access public
 	 * @return void
 	 */
@@ -52,7 +52,7 @@ class Provider extends ServiceProvider {
 	/**
 	 * Bootstrap the settings component.
 	 *
-	 * @since  1.0.0
+	 * @since  0.0.1
 	 * @access public
 	 * @return void
 	 */

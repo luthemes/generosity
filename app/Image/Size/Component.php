@@ -23,7 +23,7 @@ use Generosity\Tools\Mod;
 /**
  * Image size component class.
  *
- * @since  1.0.0
+ * @since  0.0.1
  * @access public
  */
 class Component implements Bootable {
@@ -31,7 +31,7 @@ class Component implements Bootable {
 	/**
 	 * Houses the `Sizes` collection.
 	 *
-	 * @since  1.0.0
+	 * @since  0.0.1
 	 * @access protected
 	 * @var    Sizes
 	 */
@@ -40,7 +40,7 @@ class Component implements Bootable {
 	/**
 	 * Creates the component object.
 	 *
-	 * @since  1.0.0
+	 * @since  0.0.1
 	 * @access public
 	 * @param  Sizes  $sizes
 	 * @return void
@@ -52,7 +52,7 @@ class Component implements Bootable {
 	/**
 	 * Bootstraps the component.
 	 *
-	 * @since  1.0.0
+	 * @since  0.0.1
 	 * @access public
 	 * @return void
 	 */
@@ -74,7 +74,7 @@ class Component implements Bootable {
 	/**
 	 * Runs the register action and adds image sizes to WordPress.
 	 *
-	 * @since  1.0.0
+	 * @since  0.0.1
 	 * @access public
 	 * @return void
 	 */
@@ -100,7 +100,7 @@ class Component implements Bootable {
 	 * Filter on the `image_size_names_choose` hook to add our custom image
 	 * sizes to the image size dropdown in the post editor.
 	 *
-	 * @since  1.0.0
+	 * @since  0.0.1
 	 * @access public
 	 * @param  array  $sizes
 	 * @return array
@@ -119,7 +119,7 @@ class Component implements Bootable {
 	/**
 	 * Registers the theme's default image sizes.
 	 *
-	 * @since  1.0.0
+	 * @since  0.0.1
 	 * @access public
 	 * @param  Sizes  $sizes
 	 * @return void
@@ -134,7 +134,7 @@ class Component implements Bootable {
 	/**
 	 * Customize register callback.
 	 *
-	 * @since  1.0.0
+	 * @since  0.0.1
 	 * @access public
 	 * @param  WP_Customize_Manager  $manager
 	 * @return void

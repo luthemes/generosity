@@ -18,7 +18,7 @@ use Generosity\Template\ErrorPage;
 /**
  * Filters the excerpt more link.
  *
- * @since  1.0.0
+ * @since  0.0.1
  * @access public
  * @return string
  */
@@ -39,7 +39,7 @@ add_filter( 'excerpt_more', function() {
  * Adds error data for the 404 content template. Passes in the `ErrorPage` object
  * as the `$error` variable.
  *
- * @since  1.0.0
+ * @since  0.0.1
  * @access public
  * @param  Backdrop\Tools\Collection  $data
  * @return Backdrop\Tools\Collection

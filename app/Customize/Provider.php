@@ -23,7 +23,7 @@ use Generosity\Footer;
 /**
  * Customize service provider.
  *
- * @since  1.0.0
+ * @since  0.0.1
  * @access public
  */
 class Provider extends ServiceProvider {
@@ -31,7 +31,7 @@ class Provider extends ServiceProvider {
 	/**
 	 * Binds customize component to the container.
 	 *
-	 * @since  1.0.0
+	 * @since  0.0.1
 	 * @access public
 	 * @return void
 	 */
@@ -49,7 +49,7 @@ class Provider extends ServiceProvider {
 	/**
 	 * Bootstrap the customize component.
 	 *
-	 * @since  1.0.0
+	 * @since  0.0.1
 	 * @access public
 	 * @return void
 	 */

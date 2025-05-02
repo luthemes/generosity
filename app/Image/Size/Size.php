@@ -18,7 +18,7 @@ use JsonSerializable;
 /**
  * Image size class.
  *
- * @since  1.0.0
+ * @since  0.0.1
  * @access public
  */
 class Size implements JsonSerializable {
@@ -26,7 +26,7 @@ class Size implements JsonSerializable {
 	/**
 	 * Image size name.
 	 *
-	 * @since  1.0.0
+	 * @since  0.0.1
 	 * @access protected
 	 * @var    string
 	 */
@@ -35,7 +35,7 @@ class Size implements JsonSerializable {
 	/**
 	 * Image size label.
 	 *
-	 * @since  1.0.0
+	 * @since  0.0.1
 	 * @access protected
 	 * @var    string
 	 */
@@ -44,7 +44,7 @@ class Size implements JsonSerializable {
 	/**
 	 * Image size width.
 	 *
-	 * @since  1.0.0
+	 * @since  0.0.1
 	 * @access protected
 	 * @var    int
 	 */
@@ -53,7 +53,7 @@ class Size implements JsonSerializable {
 	/**
 	 * Image size height.
 	 *
-	 * @since  1.0.0
+	 * @since  0.0.1
 	 * @access protected
 	 * @var    int
 	 */
@@ -62,7 +62,7 @@ class Size implements JsonSerializable {
 	/**
 	 * Whether to crop the image to exact width and height.
 	 *
-	 * @since  1.0.0
+	 * @since  0.0.1
 	 * @access protected
 	 * @var    bool
 	 */
@@ -71,7 +71,7 @@ class Size implements JsonSerializable {
 	/**
 	 * Whether the size is considered a featured image size.
 	 *
-	 * @since  1.0.0
+	 * @since  0.0.1
 	 * @access protected
 	 * @var    bool
 	 */
@@ -80,7 +80,7 @@ class Size implements JsonSerializable {
 	/**
 	 * Set up the object properties.
 	 *
-	 * @since  1.0.0
+	 * @since  0.0.1
 	 * @access public
 	 * @param  string  $name
 	 * @param  array   $options
@@ -99,7 +99,7 @@ class Size implements JsonSerializable {
 	/**
 	 * Returns the image sizes in a format necessary for JSON serialization.
 	 *
-	 * @since  1.0.0
+	 * @since  0.0.1
 	 * @access public
 	 * @return array
 	 */
@@ -115,7 +115,7 @@ class Size implements JsonSerializable {
 	/**
 	 * Returns the image size name.
 	 *
-	 * @since  1.0.0
+	 * @since  0.0.1
 	 * @access public
 	 * @return string
 	 */
@@ -126,7 +126,7 @@ class Size implements JsonSerializable {
 	/**
 	 * Returns the image size label.
 	 *
-	 * @since  1.0.0
+	 * @since  0.0.1
 	 * @access public
 	 * @return string
 	 */
@@ -141,7 +141,7 @@ class Size implements JsonSerializable {
 	/**
 	 * Returns the image size width.
 	 *
-	 * @since  1.0.0
+	 * @since  0.0.1
 	 * @access public
 	 * @return int
 	 */
@@ -152,7 +152,7 @@ class Size implements JsonSerializable {
 	/**
 	 * Returns the image size height.
 	 *
-	 * @since  1.0.0
+	 * @since  0.0.1
 	 * @access public
 	 * @return int
 	 */
@@ -163,7 +163,7 @@ class Size implements JsonSerializable {
 	/**
 	 * Returns whether to hard-crop the image.
 	 *
-	 * @since  1.0.0
+	 * @since  0.0.1
 	 * @access public
 	 * @return bool
 	 */
@@ -174,7 +174,7 @@ class Size implements JsonSerializable {
 	/**
 	 * Returns whether this is a featured image size.
 	 *
-	 * @since  1.0.0
+	 * @since  0.0.1
 	 * @access public
 	 * @return bool
 	 */

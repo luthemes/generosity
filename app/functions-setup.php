@@ -16,7 +16,7 @@ namespace Generosity;
 /**
  * Set up theme support.  This is where calls to `add_theme_support()` happen.
  *
- * @since  1.0.0
+ * @since  0.0.1
  * @access public
  * @return void
  */
@@ -45,7 +45,7 @@ add_action( 'after_setup_theme', function() {
  * Register menus.
  *
  * @link   https://developer.wordpress.org/reference/functions/register_nav_menus/
- * @since  1.0.0
+ * @since  0.0.1
  * @access public
  * @return void
  */
@@ -62,7 +62,7 @@ add_action( 'init', function() {
  *
  * @link   https://developer.wordpress.org/reference/functions/register_sidebar/
  * @link   https://developer.wordpress.org/reference/functions/register_sidebars/
- * @since  1.0.0
+ * @since  0.0.1
  * @access public
  * @return void
  */

@@ -26,7 +26,7 @@ class Component implements Bootable {
 		/**
 		 * Array of `Customizable` components bound to the container.
 		 *
-		 * @since  1.0.0
+		 * @since  0.0.1
 		 * @access protected
 		 * @var    array
 		 */
@@ -35,7 +35,7 @@ class Component implements Bootable {
 		/**
 		 * Sets up initial object properties.
 		 *
-		 * @since  1.0.0
+		 * @since  0.0.1
 		 * @access public
 		 * @param  array  $components  Array `Customizable` component names.
 		 * @return void
@@ -48,7 +48,7 @@ class Component implements Bootable {
     /**
      * Adds our customizer-related actions to the appropriate hooks.
      *
-     * @since  1.0.0
+     * @since  0.0.1
      * @return void
      *
      * @access public
@@ -75,7 +75,7 @@ class Component implements Bootable {
 		 * Callback for registering panels.
 		 *
 		 * @link   https://developer.wordpress.org/themes/customize-api/customizer-objects/#panels
-		 * @since  1.0.0
+		 * @since  0.0.1
 		 * @access public
 		 * @param  WP_Customize_Manager  $manager  Instance of the customize manager.
 		 * @return void
@@ -105,7 +105,7 @@ class Component implements Bootable {
 	 * Callback for registering sections.
 	 *
 	 * @link   https://developer.wordpress.org/themes/customize-api/customizer-objects/#sections
-	 * @since  1.0.0
+	 * @since  0.0.1
 	 * @access public
 	 * @param  WP_Customize_Manager  $manager  Instance of the customize manager.
 	 * @return void
@@ -131,7 +131,7 @@ class Component implements Bootable {
 	 * Callback for registering controls.
 	 *
 	 * @link   https://developer.wordpress.org/themes/customize-api/customizer-objects/#controls
-	 * @since  1.0.0
+	 * @since  0.0.1
 	 * @access public
 	 * @param  WP_Customize_Manager  $manager  Instance of the customize manager.
 	 * @return void
@@ -147,7 +147,7 @@ class Component implements Bootable {
     /**
      * Add our controls for customizer.
      *
-     * @since  1.0.0
+     * @since  0.0.1
      * @access public
      * @param  WP_Customize_Manager $manager
      * @return void
@@ -163,7 +163,7 @@ class Component implements Bootable {
 	/**
 	 * Registers customizer partials.
 	 *
-	 * @since  1.0.0
+	 * @since  0.0.1
 	 * @access public
 	 * @param  WP_Customize_Manager  $manager
 	 * @return void
@@ -180,7 +180,7 @@ class Component implements Bootable {
 	 * Register or enqueue scripts/styles for the controls that are output
 	 * in the controls frame.
 	 *
-	 * @since  1.0.0
+	 * @since  0.0.1
 	 * @access public
 	 * @return void
 	 */
@@ -207,7 +207,7 @@ class Component implements Bootable {
 	/**
 	 * Register or enqueue scripts/styles for the live preview frame.
 	 *
-	 * @since  1.0.0
+	 * @since  0.0.1
 	 * @access public
 	 * @return void
 	 */

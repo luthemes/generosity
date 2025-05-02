@@ -14,7 +14,7 @@ use function Backdrop\Fonts\enqueue;
 /**
  * Changes the theme template path to the `public/views` folder.
  *
- * @since  1.0.0
+ * @since  0.0.1
  * @access public
  * @return string
  */
@@ -27,7 +27,7 @@ add_filter( 'backdrop/template/path', function() {
  *
  * This function enqueues the specified fonts for use in the theme.
  *
- * @since  1.0.0
+ * @since  0.0.1
  * @access public
  * @return void
  */

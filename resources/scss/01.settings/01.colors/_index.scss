@@ -10,7 +10,7 @@
 /// defined via the `editor-color-palette` setting in `app/functions-setup.php`
 /// for the WordPress editor.
 ///
-/// @since  1.0.0
+/// @since  0.0.1
 /// @access public
 /// @return {map}  Map of defined colors.
 
@@ -79,7 +79,7 @@ $yellow:   #ffff00;
 
 /// Returns a single color value by name.
 ///
-/// @since  1.0.0
+/// @since  0.0.1
 /// @access public
 /// @param  {string}  $name  Font familiy name.
 /// @return {string}         Font family value.

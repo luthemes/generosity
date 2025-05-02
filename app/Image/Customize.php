@@ -80,7 +80,7 @@ class Customize extends Customizable {
 
         // Add a control for the feature image size.
         $manager->add_control( 'theme_content_feature_image', array(
-            'label'    => __( 'Feature Image Size', 'amicable' ),
+            'label'    => __( 'Feature Image Size', 'generosity' ),
             'section'  => 'theme_content_feature_image',
             'settings' => 'theme_content_feature_image',
             'type'     => 'select',

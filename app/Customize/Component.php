@@ -62,7 +62,8 @@ class Component implements Bootable {
 			'registerPanels',
 			'registerSections',
 			'registerSettings',
-			'registerControls'
+			'registerControls',
+			'registerPartials',
 		] );
 
 		// Enqueue scripts and styles.
@@ -156,6 +157,22 @@ class Component implements Bootable {
 		foreach ( $this->components as $component ) {
 
 			App::resolve( $component )->registerControls( $manager );
+		}
+	}
+
+	/**
+	 * Registers customizer partials.
+	 *
+	 * @since  1.0.0
+	 * @access public
+	 * @param  WP_Customize_Manager  $manager
+	 * @return void
+	 */
+	public function registerPartials( WP_Customize_Manager $manager ) {
+
+		foreach ( $this->components as $component ) {
+
+			App::resolve( $component )->registerPartials( $manager );
 		}
 	}
 

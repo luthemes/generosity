@@ -22,14 +22,23 @@ namespace Generosity;
  */
 add_action( 'after_setup_theme', function() {
 
+	// Sets the theme content width.
+	$GLOBALS['content_width'] = 640;
+
 	// Automatically add the `<title>` tag.
 	add_theme_support( 'title-tag' );
 
 	// Automatically add feed links to `<head>`.
 	add_theme_support( 'automatic-feed-links' );
 
+	// Adds featured image support.
+	add_theme_support( 'post-thumbnails' );
+
 	// Outputs HTML5 markup for core features.
 	add_theme_support( 'html5', [ 'caption', 'comment-form', 'comment-list', 'gallery', 'search-form' ] );
+
+	// Load theme translations.
+	load_theme_textdomain( 'generosity', get_parent_theme_file_path( 'public/lang' ) );
 } );
 
 /**
@@ -70,10 +79,6 @@ add_action( 'widgets_init', function() {
 		[
 			'id'   => 'primary',
 			'name' => esc_html__ ('Primary', 'generosity' )
-		],
-		[
-			'id'   => 'secondary',
-			'name' => esc_html__ ('Secondary', 'generosity' )
 		]
 	];
 
@@ -90,7 +95,7 @@ add_action( 'after_setup_theme', function() {
 	add_theme_support( 'custom-header',
 		[
 			'default-text-color' => 'ffffff',
-			'default-image'      => get_theme_file_uri( '/public/images/headers/space-splatters.jpg' ),
+			'default-image'      => get_theme_file_uri( '/public/images/headers/andromeda-galaxy.png' ),
 			'height'             => 350,
 			'width'              => 1170,
 			'flex-height'        => true,
@@ -98,11 +103,23 @@ add_action( 'after_setup_theme', function() {
 		]
 	);
 
-	register_default_headers( [
-		'horizon' => [
-			'url'           => '%s/public/images/headers/horizon.jpg',
-			'thumbnail_url' => '%s/public/images/headers/horizon.jpg',
-			'description'   => esc_html__( 'Horizon', 'generosity' ),
-		]
-	] );
+	$headers = [
+		'sombrero-galaxy' => 'Sombrero Galaxy',
+		'macbook-pro'     => 'MacBook Pro',
+	];
+	
+	$base_url = '%s/public/images/headers/';
+	
+	$defaults = [];
+	
+	foreach ( $headers as $key => $label ) {
+		$defaults[ $key ] = [
+			'url'           => $base_url . $key . '.png',
+			'thumbnail_url' => $base_url . $key . '.png',
+			'description'   => esc_html__( $label, 'generosity' ),
+		];
+	}
+	
+	register_default_headers( $defaults );
+	
 } );

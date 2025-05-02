@@ -70,12 +70,6 @@ class Customize extends Customizable {
 			'sanitize_callback' => 'sanitize_key',
 			'transport'         => 'postMessage'
 		] );
-
-		$manager->add_setting( 'theme_content_width', [
-			'default'           => 'normal',
-			'sanitize_callback' => 'sanitize_key',
-			'transport'         => 'postMessage',
-		] );
 		
 	}
 
@@ -89,28 +83,12 @@ class Customize extends Customizable {
 	 */
 	public function registerControls( WP_Customize_Manager $manager ) {
 
-			// Add the layout control.
-			$manager->add_control( new RadioImage( $manager, 'theme_content_layout', [
-				'label'    => esc_html__( 'Layout', 'generosity' ),
-				'section'  => 'theme_content_layout',
-				'choices'  => $this->app_layouts->customizeChoices(),
-			] ) );
-
-			$manager->add_control( 'theme_content_width', [
-				'label'    => __( 'Content Width', 'generosity' ),
-				'section'  => 'theme_content_layout',
-				'type'     => 'select',
-				'choices'  => [
-					'narrow' => __( 'Narrow', 'generosity' ),
-					'normal' => __( 'Normal', 'generosity' ),
-					'wide'   => __( 'Wide', 'generosity' ),
-				],
-				'active_callback' => function () {
-					return get_theme_mod( 'theme_content_layout' ) === 'no-sidebar';
-				},
-			] );
-			
-	
+		// Add the layout control.
+		$manager->add_control( new RadioImage( $manager, 'theme_content_layout', [
+			'label'    => esc_html__( 'Layout', 'generosity' ),
+			'section'  => 'theme_content_layout',
+			'choices'  => $this->app_layouts->customizeChoices(),
+		] ) );	
 	}
 	
 

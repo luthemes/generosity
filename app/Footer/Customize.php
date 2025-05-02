@@ -85,17 +85,14 @@ class Customize extends Customizable {
 		$manager->add_control( 'theme_footer_powered_by', [
 			'section'  => 'theme_footer_credit',
 			'type'     => 'checkbox',
-			'label'    => __( 'Show random "powered by" credit text.', 'generosity' ),
+			'label'    => __( 'Enable random credit text', 'generosity' ),
 		] );
 
     		// Footer credit control.
 		$manager->add_control( 'theme_footer_custom_credit', [
 			'section'         => 'theme_footer_credit',
 			'type'            => 'textarea',
-			'label'           => __( 'Custom Footer Text', 'generosity' ),
-			'active_callback' => function( $control ) {
-				return ! $control->manager->get_setting( 'theme_footer_powered_by' )->value();
-			}
+			'label'           => __( 'Custom Credit', 'generosity' ),
 		] );
 	}
 

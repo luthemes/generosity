@@ -13,6 +13,8 @@
 
 namespace Generosity;
 
+use Generosity\Template\ErrorPage;
+
 /**
  * Filters the excerpt more link.
  *
@@ -31,4 +33,23 @@ add_filter( 'excerpt_more', function() {
 			the_title( '<span class="screen-reader-text">', '</span>', false )
 		)
 	);
+} );
+
+/**
+ * Adds error data for the 404 content template. Passes in the `ErrorPage` object
+ * as the `$error` variable.
+ *
+ * @since  1.0.0
+ * @access public
+ * @param  Backdrop\Tools\Collection  $data
+ * @return Backdrop\Tools\Collection
+ */
+add_filter( 'backdrop/view/content/data', function( $data ) {
+
+	if ( is_404() ) {
+		$data->add( 'error', new ErrorPage() );
+	}
+
+	return $data;
+
 } );

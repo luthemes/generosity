@@ -116,7 +116,6 @@ add_action( 'after_setup_theme', function() {
 		$defaults[ $key ] = [
 			'url'           => $base_url . $key . '.png',
 			'thumbnail_url' => $base_url . $key . '.png',
-			'description'   => esc_html__( $label, 'generosity' ),
 		];
 	}
 	

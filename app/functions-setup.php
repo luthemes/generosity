@@ -36,7 +36,7 @@ add_action( 'after_setup_theme', function() {
 	// Adds featured image support.
 	add_theme_support( 'post-thumbnails' );
 
-	if ( is_classicpress() ) {
+	if ( ! is_classicpress() ) {
 		// Outputs HTML5 markup for core features.
 		add_theme_support( 'html5', [ 'caption', 'comment-form', 'comment-list', 'gallery', 'search-form' ] );
 	}

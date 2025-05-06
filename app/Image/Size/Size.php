@@ -103,6 +103,7 @@ class Size implements JsonSerializable {
 	 * @access public
 	 * @return array
 	 */
+	#[\ReturnTypeWillChange]
 	public function jsonSerialize() {
 		return [
 			'name'   => $this->name(),

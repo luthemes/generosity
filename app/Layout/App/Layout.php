@@ -79,6 +79,7 @@ class Layout implements JsonSerializable {
 	 * @access public
 	 * @return array
 	 */
+	#[\ReturnTypeWillChange]
 	public function jsonSerialize() {
 
 		return [

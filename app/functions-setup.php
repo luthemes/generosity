@@ -13,6 +13,8 @@
 
 namespace Generosity;
 
+use function Backdrop\is_classicpress;
+
 /**
  * Set up theme support.  This is where calls to `add_theme_support()` happen.
  *
@@ -34,8 +36,10 @@ add_action( 'after_setup_theme', function() {
 	// Adds featured image support.
 	add_theme_support( 'post-thumbnails' );
 
-	// Outputs HTML5 markup for core features.
-	add_theme_support( 'html5', [ 'caption', 'comment-form', 'comment-list', 'gallery', 'search-form' ] );
+	if ( is_classicpress() ) {
+		// Outputs HTML5 markup for core features.
+		add_theme_support( 'html5', [ 'caption', 'comment-form', 'comment-list', 'gallery', 'search-form' ] );
+	}
 
 	// Load theme translations.
 	load_theme_textdomain( 'generosity', get_parent_theme_file_path( 'public/lang' ) );

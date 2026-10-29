@@ -200,7 +200,7 @@ class OptionsPage implements Bootable {
 			<h1 class="wp-heading-inline"><?php echo esc_html( $this->label ) ?></h1>
 
 			<?php if ( current_user_can( 'customize' ) ) : ?>
-				<a href="<?php esc_url( wp_customize_url() ) ?>" class="hide-if-no-js page-title-action"><?php esc_html_e( 'Customize', 'generosity' ) ?></a>
+				<a href="<?php echo esc_url( wp_customize_url() ) ?>" class="hide-if-no-js page-title-action"><?php esc_html_e( 'Customize', 'generosity' ) ?></a>
 			<?php endif ?>
 
 			<div class="wp-filter">
@@ -236,7 +236,7 @@ class OptionsPage implements Bootable {
 					$url = remove_query_arg( 'view', $url );
 				endif; ?>
 
-				<li class="<?php sanitize_html_class( $view->name() ) ?>">
+				<li class="<?php echo esc_attr( sanitize_html_class( $view->name() ) ) ?>">
 					<?php printf(
 						'<a href="%s"%s>%s</a>',
 						esc_url( $url ),
@@ -364,6 +364,7 @@ class OptionsPage implements Bootable {
 			return $this->views[ $current ];
 		}
 
-		return null;
+		// Fall back to the General tab for an unknown or missing view.
+		return isset( $this->views['general'] ) ? $this->views['general'] : null;
 	}
 }

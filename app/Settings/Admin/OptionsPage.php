@@ -15,7 +15,6 @@ namespace Generosity\Settings\Admin;
 
 use Backdrop\Contracts\Bootable;
 use Generosity\Settings\Admin\Views;
-use function Generosity\Vite\asset;
 
 /**
  * Options page class.
@@ -155,7 +154,6 @@ class OptionsPage implements Bootable {
 
 		// Print custom styles.
 		add_action( 'admin_head', array( $this, 'print_styles' ) );
-		add_action( 'admin_enqueue_scripts', [ $this, 'admin_styles' ] );
 
 		// Get the current view and boot it.
 		$view = $this->currentView();
@@ -182,10 +180,6 @@ class OptionsPage implements Bootable {
 			) ?>
 		</style>
 	<?php }
-
-	public function admin_styles() {
-		wp_enqueue_style( 'generosity-admin-styles', asset( 'resources/scss/admin.scss' ), null, null );
-	}
 
 	/**
 	 * Outputs the settings page to the screen.

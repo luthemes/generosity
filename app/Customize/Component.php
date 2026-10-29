@@ -213,9 +213,6 @@ class Component implements Bootable {
 	 */
 	public function previewEnqueue() {
 
-		// Enqueue preview style.
-		wp_enqueue_style( 'generosity-customize-preview', asset( 'resources/scss/customize-preview.scss' ), [], null );
-
 		// Enqueue preview script.
 		wp_enqueue_script( 'generosity-customize-preview', asset( 'resources/js/customize-preview.js' ), [ 'customize-preview' ], null, true );
 

@@ -11,8 +11,15 @@
 	position: relative;
 }
 
+/* Visually hidden rather than display: none, so a layout can still be chosen with the keyboard. */
 .radio-image input[type="radio"] {
-	display: none;
+	position: absolute;
+	opacity: 0;
+}
+
+.radio-image__radio:focus-visible ~ .radio-image__image {
+	outline: 2px solid #2271b1;
+	outline-offset: 2px;
 }
 
 .radio-image__image {
@@ -38,4 +45,9 @@
 
 #customize-control-theme_content_width {
 	display: none;
+}
+
+/* Custom Credit while the random credit text is on (see customize-controls/footer.js). */
+li.customize-control.generosity-control-hidden {
+	display: none !important;
 }

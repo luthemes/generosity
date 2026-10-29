@@ -56,7 +56,7 @@ class Component implements Bootable {
 	 * @access public
 	 * @return void
 	 */
-	public function boot() {
+	public function boot(): void {
 
 		// Run registration on the `init` hook.
 		add_action( 'init', [ $this, 'register' ], 5 );

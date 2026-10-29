@@ -3,6 +3,8 @@ node_modules
 public/assets
 vendor
 
-public/mix-manifest.json
+# Composer writes this on install. The framework is pinned in composer.json instead.
 composer.lock
-package-lock.json
+
+# Theme export (npm run export)
+/generosity

@@ -29,9 +29,13 @@ add_action( 'wp_enqueue_scripts', function() {
 
 	// Enqueue theme scripts
 	wp_enqueue_script( 'generosity-app', asset( 'assets/js/app.js' ), [ 'jquery' ], null, true );
+
+	// Screen reader text for the menu toggles. `navigation.js` sets these as plain text.
 	wp_localize_script( 'generosity-app', 'generosityScreenReaderText', [
-		'expand'   => '<span class="screen-reader-text">' . esc_html__( 'expand child menu', 'generosity' ) . '</span>',
-		'collapse' => '<span class="screen-reader-text">' . esc_html__( 'collapse child menu', 'generosity' ) . '</span>',
+		'expandMain'    => __( 'Open the main menu', 'generosity' ),
+		'collapseMain'  => __( 'Close the main menu', 'generosity' ),
+		'expandChild'   => __( 'expand child menu', 'generosity' ),
+		'collapseChild' => __( 'collapse child menu', 'generosity' ),
 	] );
 
 	// Loads ClassicPress' comment-reply script where appropriate.

@@ -3,10 +3,28 @@ Generosity is a next-generation theme designed to work with ClassicPress, offeri
 
 This theme is a parent theme. What this means is that to customize it, you should create a child theme. All you need to know is that it's a solid and flexible starting point for any blog or portfolio.
 
+## Requirements
+* ClassicPress 2.0 or later, or WordPress 5.9 or later
+* PHP 7.4 or later
+
+## Development
+The theme's PHP dependencies come from Composer and its assets are built with [Vite](https://vite.dev).
+
+* Node.js 20.19 or later, or 22.12 or later
+* Composer
+
+<pre>
+composer install --no-dev
+npm ci
+npm run build
+</pre>
+
+`npm run prod` builds the assets into `public/assets`, `npm run watch` rebuilds them as you work, and `npm run build` also exports the theme into the `generosity` folder, ready to zip.
+
 ## Child themes
 Since Generosity is a parent theme, you'll want to create a child theme if you plan on making any customizations. Don't know how to make a child theme? Just follow the steps below.
 
-* Create a theme folder in your `wp-content/themes` directory called `Generosity-child`.
+* Create a theme folder in your `wp-content/themes` directory called `generosity-child`.
 * Create a `style.css` file within your theme folder.
 * At the top of your `style.css` file, add the below information.
 
@@ -19,9 +37,11 @@ Since Generosity is a parent theme, you'll want to create a child theme if you p
  * Author: Your Name
  * Author URI: https://link-to-your-site.com
  * Tags: Add, Whatever, Tags, You, Want
- * Template: Generosity-child
+ * Template: generosity
  */
 </pre>
+
+`Template` must be the parent theme's folder name, `generosity`.
 
 From this point, you simply need to start adding your own styles. The parent theme styles will automatically be loaded for you.
 

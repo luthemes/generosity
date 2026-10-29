@@ -6,12 +6,14 @@
  * Author URI:   https://luthemes.com
  * License:      GNU General Public License v2.0 or later
  * License URI:  https://www.gnu.org/licenses/gpl-2.0.html
- * Tags:         blog
+ * Tags:         blog, left-sidebar, right-sidebar, one-column, two-columns, custom-header, custom-menu, featured-images, theme-options, threaded-comments, translation-ready
  * Requires CP:  2.0
  * Requires PHP: 7.4
+ * Requires at least: 5.9
  * Tested up to: 6.2
- * Version:      0.0.3
+ * Version:      0.0.4
  * Text Domain:  generosity
+ * Domain Path:  /public/lang
  */
 
 /* ----------------------------------------------------------------------------------

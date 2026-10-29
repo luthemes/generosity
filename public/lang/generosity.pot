@@ -1,0 +1,451 @@
+# Copyright (C) 2026 Benjamin Lu
+# This file is distributed under the GNU General Public License v2.0 or later.
+msgid ""
+msgstr ""
+"Project-Id-Version: Generosity 0.0.4\n"
+"Report-Msgid-Bugs-To: https://github.com/luthemes/generosity/issues\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"POT-Creation-Date: 2026-10-29T14:51:23+00:00\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"X-Generator: WP-CLI 2.12.0\n"
+"X-Domain: generosity\n"
+
+#. Theme Name of the theme
+#: style.css
+msgid "Generosity"
+msgstr ""
+
+#. Theme URI of the theme
+#: style.css
+msgid "https://luthemes.com/portfolio/generosity"
+msgstr ""
+
+#. Description of the theme
+#: style.css
+msgid "Generosity is a next-generation theme designed to work with ClassicPress and offer an ideal experience for showcasing your site's content."
+msgstr ""
+
+#. Author of the theme
+#: style.css
+msgid "Benjamin Lu"
+msgstr ""
+
+#. Author URI of the theme
+#: style.css
+msgid "https://luthemes.com"
+msgstr ""
+
+#: app/Customize/Component.php:85
+msgid "Theme: Global"
+msgstr ""
+
+#: app/Customize/Component.php:86
+msgid "Theme: Header"
+msgstr ""
+
+#: app/Customize/Component.php:87
+msgid "Theme: Content"
+msgstr ""
+
+#: app/Customize/Component.php:88
+msgid "Theme: Footer"
+msgstr ""
+
+#: app/Customize/Component.php:117
+msgid "Branding"
+msgstr ""
+
+#: app/Footer/Customize.php:41
+msgid "Credit"
+msgstr ""
+
+#: app/Footer/Customize.php:88
+msgid "Enable random credit text"
+msgstr ""
+
+#: app/Footer/Customize.php:95
+msgid "Custom Credit"
+msgstr ""
+
+#. Translators: 1 is the Composer command, 2 is the theme folder.
+#: app/framework-missing.php:27
+#, php-format
+msgid "The Generosity theme can't find the Backdrop framework. Run %1$s in the %2$s folder, or upload a copy of the theme that includes its vendor folder."
+msgstr ""
+
+#: app/functions-assets.php:38
+msgid "Open the main menu"
+msgstr ""
+
+#: app/functions-assets.php:39
+msgid "Close the main menu"
+msgstr ""
+
+#: app/functions-assets.php:40
+msgid "expand child menu"
+msgstr ""
+
+#: app/functions-assets.php:41
+msgid "collapse child menu"
+msgstr ""
+
+#. Translators: %s is the post title for screen readers.
+#: app/functions-filters.php:32
+#, php-format
+msgid "Continue reading&nbsp;%s&nbsp;&rarr;"
+msgstr ""
+
+#: app/functions-setup.php:59
+msgid "Primary Navigation"
+msgstr ""
+
+#: app/functions-setup.php:85
+msgid "Primary"
+msgstr ""
+
+#: app/functions-template.php:31
+msgctxt "meta separator"
+msgid "&middot;"
+msgstr ""
+
+#: app/Image/Customize.php:48
+msgid "Feature Image"
+msgstr ""
+
+#: app/Image/Customize.php:83
+msgid "Feature Image Size"
+msgstr ""
+
+#: app/Layout/Customize.php:53
+#: app/Layout/Customize.php:88
+msgid "Layout"
+msgstr ""
+
+#: app/Settings/Admin/OptionsPage.php:197
+#: app/Settings/ThemeManager/Theme.php:275
+msgid "Customize"
+msgstr ""
+
+#: app/Settings/Admin/Views/General.php:54
+msgid "General"
+msgstr ""
+
+#: app/Settings/Admin/Views/General.php:121
+msgid "Clean ClassicPress"
+msgstr ""
+
+#: app/Settings/Admin/Views/General.php:121
+msgid "Clean WordPress"
+msgstr ""
+
+#: app/Settings/Admin/Views/General.php:125
+msgid "Reading"
+msgstr ""
+
+#: app/Settings/Admin/Views/General.php:159
+msgid "404 Page"
+msgstr ""
+
+#: app/Settings/Admin/Views/General.php:166
+msgid "Emoji"
+msgstr ""
+
+#: app/Settings/Admin/Views/General.php:171
+msgid "Toolbar"
+msgstr ""
+
+#: app/Settings/Admin/Views/General.php:176
+msgid "Embeds"
+msgstr ""
+
+#: app/Settings/Admin/Views/General.php:204
+msgid "Settings related to reading and display options for your site, including the 404 error page."
+msgstr ""
+
+#: app/Settings/Admin/Views/General.php:219
+msgid "Clean up unnecessary items on the front end of your site for speed improvements."
+msgstr ""
+
+#: app/Settings/Admin/Views/General.php:261
+msgid "Add New Page"
+msgstr ""
+
+#: app/Settings/Admin/Views/General.php:270
+msgid "Select a page to display when users visit a 404 error on your site. Ensure the page is set to private so it does not appear on the front end."
+msgstr ""
+
+#: app/Settings/Admin/Views/General.php:287
+msgid "Disable Emoji Scripts"
+msgstr ""
+
+#: app/Settings/Admin/Views/General.php:292
+msgid "All modern browsers support emoji natively. Disabling emoji scripts removes the JavaScript loaded on every page of your site for a small percentage of users on outdated browsers."
+msgstr ""
+
+#: app/Settings/Admin/Views/General.php:309
+msgid "Disable Toolbar"
+msgstr ""
+
+#: app/Settings/Admin/Views/General.php:313
+msgid "Disables the toolbar on the front end of the site, which loads additional JavaScript and CSS on every page load."
+msgstr ""
+
+#: app/Settings/Admin/Views/General.php:326
+msgid "Disable ClassicPress Embeds"
+msgstr ""
+
+#: app/Settings/Admin/Views/General.php:326
+msgid "Disable WordPress Embeds"
+msgstr ""
+
+#: app/Settings/Admin/Views/General.php:337
+msgid "Removes the JavaScript that allows other sites to embed your posts."
+msgstr ""
+
+#: app/Settings/Admin/Views/General.php:350
+msgid "Settings"
+msgstr ""
+
+#: app/Settings/Admin/Views/General.php:355
+msgid "Update Settings"
+msgstr ""
+
+#: app/Settings/Admin/Views/Plugins.php:54
+msgid "Plugins"
+msgstr ""
+
+#: app/Settings/Admin/Views/Themes.php:54
+msgid "Themes"
+msgstr ""
+
+#: app/Settings/Provider.php:45
+msgid "Generosity Settings"
+msgstr ""
+
+#: app/Settings/ThemeManager/Theme.php:239
+msgid "Active:"
+msgstr ""
+
+#. Translators: %s is the theme name.
+#: app/Settings/ThemeManager/Theme.php:285
+#, php-format
+msgid "Activate %s"
+msgstr ""
+
+#: app/Settings/ThemeManager/Theme.php:286
+msgid "Activate"
+msgstr ""
+
+#: app/Settings/ThemeManager/Theme.php:295
+msgid "Live Preview"
+msgstr ""
+
+#: app/Settings/ThemeManager/Theme.php:304
+msgid "Download"
+msgstr ""
+
+#: app/Template/ErrorPage.php:117
+msgid "404 Not Found"
+msgstr ""
+
+#: app/Template/ErrorPage.php:136
+#: public/views/entry/404.php:8
+msgid "It looks like you stumbled upon a page that does not exist. Perhaps rolling the dice with a search might help."
+msgstr ""
+
+#: app/Tools/PoweredBy.php:35
+msgid "Powered by heart and soul."
+msgstr ""
+
+#: app/Tools/PoweredBy.php:36
+msgid "Powered by crazy ideas and passion."
+msgstr ""
+
+#: app/Tools/PoweredBy.php:37
+msgid "Powered by the thing that holds all things together in the universe."
+msgstr ""
+
+#: app/Tools/PoweredBy.php:38
+msgid "Powered by love."
+msgstr ""
+
+#: app/Tools/PoweredBy.php:39
+msgid "Powered by the vast and endless void."
+msgstr ""
+
+#: app/Tools/PoweredBy.php:40
+msgid "Powered by the code of a maniac."
+msgstr ""
+
+#: app/Tools/PoweredBy.php:41
+msgid "Powered by peace and understanding."
+msgstr ""
+
+#: app/Tools/PoweredBy.php:42
+msgid "Powered by coffee."
+msgstr ""
+
+#: app/Tools/PoweredBy.php:43
+msgid "Powered by sleepness nights."
+msgstr ""
+
+#: app/Tools/PoweredBy.php:44
+msgid "Powered by the love of all things."
+msgstr ""
+
+#: app/Tools/PoweredBy.php:45
+msgid "Powered by something greater than myself."
+msgstr ""
+
+#: app/Tools/PoweredBy.php:46
+msgid "Powered by whispers from the future."
+msgstr ""
+
+#: app/Tools/PoweredBy.php:47
+msgid "Powered by the fusion of technology and dreams."
+msgstr ""
+
+#: app/Tools/PoweredBy.php:48
+msgid "Powered by the strength found in kindness."
+msgstr ""
+
+#: app/Tools/PoweredBy.php:49
+msgid "Powered by the melodies of the unseen world."
+msgstr ""
+
+#: app/Tools/PoweredBy.php:50
+msgid "Powered by the courage of the unheard voices."
+msgstr ""
+
+#: app/Tools/PoweredBy.php:51
+msgid "Powered by the beauty of the human spirit."
+msgstr ""
+
+#: app/Tools/PoweredBy.php:52
+msgid "Powered by the quest for eternal wisdom."
+msgstr ""
+
+#: app/Tools/PoweredBy.php:53
+msgid "Powered by the energy of uncharted galaxies."
+msgstr ""
+
+#: app/Tools/PoweredBy.php:54
+msgid "Powered by the magic hidden in plain sight."
+msgstr ""
+
+#: app/Tools/PoweredBy.php:55
+msgid "Powered by the legacy of the ancients."
+msgstr ""
+
+#: app/Tools/PoweredBy.php:56
+msgid "Powered by the dance between light and darkness."
+msgstr ""
+
+#: app/Tools/PoweredBy.php:57
+msgid "Powered by the touch of the morning sun."
+msgstr ""
+
+#: app/Tools/PoweredBy.php:58
+msgid "Powered by the secrets of the deep ocean."
+msgstr ""
+
+#: app/Tools/PoweredBy.php:59
+msgid "Powered by the echoes of laughter and joy."
+msgstr ""
+
+#: app/Tools/PoweredBy.php:60
+msgid "Powered by the relentless pursuit of truth."
+msgstr ""
+
+#: config/global-layouts.php:16
+msgid "Left Sidebar"
+msgstr ""
+
+#: config/global-layouts.php:20
+msgid "Right Sidebar"
+msgstr ""
+
+#: config/global-layouts.php:24
+msgid "No Sidebar"
+msgstr ""
+
+#: config/image-sizes.php:17
+msgid "Landscape: Small"
+msgstr ""
+
+#: config/image-sizes.php:22
+msgid "Landscape: Medium"
+msgstr ""
+
+#: config/image-sizes.php:27
+msgid "Landscape: Large"
+msgstr ""
+
+#. Translators: 1 is the current year, 2 is a link to the home page.
+#: config/_settings-mods.php:57
+#, php-format
+msgid "&#169; %1$s. %2$s."
+msgstr ""
+
+#. Translators: 1 is a link to ClassicPress or WordPress, 2 is a link to the theme.
+#: config/_settings-mods.php:61
+#: config/_settings-mods.php:64
+#, php-format
+msgid "Powered by %1$s and %2$s."
+msgstr ""
+
+#: index.php:15
+msgid "This site is temporarily unavailable."
+msgstr ""
+
+#: index.php:16
+msgid "Theme dependencies are missing"
+msgstr ""
+
+#. Translators: %s is the parent comment link.
+#: public/views/comment/default.php:6
+#, php-format
+msgid "In reply to %s"
+msgstr ""
+
+#: public/views/comment/default.php:35
+msgid "Your comment is awaiting moderation."
+msgstr ""
+
+#: public/views/comments/default.php:14
+msgctxt "comments title"
+msgid "One Comment"
+msgstr ""
+
+#. Translators: 1 = counts.
+#: public/views/comments/default.php:17
+#, php-format
+msgctxt "comments title"
+msgid "%1$s Comment"
+msgid_plural "%1$s Comments"
+msgstr[0] ""
+msgstr[1] ""
+
+#: public/views/comments/default.php:34
+msgid "Older Comments"
+msgstr ""
+
+#: public/views/comments/default.php:35
+msgid "Newer Comments"
+msgstr ""
+
+#: public/views/entry/404.php:4
+msgid "Whoah, partner!"
+msgstr ""
+
+#: public/views/header/default.php:9
+msgid "Skip to content"
+msgstr ""
+
+#: public/views/menu/primary.php:5
+msgid "Menu"
+msgstr ""

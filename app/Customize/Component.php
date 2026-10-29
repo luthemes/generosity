@@ -201,7 +201,7 @@ class Component implements Bootable {
 		}
 
 		// Pass JSON to the controls script.
-		wp_localize_script( 'generosity-customize-controls', 'generosityCustomizeControls', $json );
+		wp_localize_script( 'generosity-customize-controls', 'generosityCustomizeControls', $json->jsonSerialize() );
 	}
 
 	/**
@@ -228,6 +228,6 @@ class Component implements Bootable {
 		}
 
 		// Pass JSON to the preview script.
-		wp_localize_script( 'generosity-customize-preview', 'generosityCustomizePreview', $json );
+		wp_localize_script( 'generosity-customize-preview', 'generosityCustomizePreview', $json->jsonSerialize() );
 	}
 }

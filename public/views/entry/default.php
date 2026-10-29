@@ -11,11 +11,11 @@
 ?>
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 	<header class="entry-header">
-		<?php Backdrop\Post\display_title(); ?>
+		<?php Backdrop\Post\display_title( [ 'class' => 'entry-title' ] ); ?>
 		<div class="entry-metadata">
-			<?php Backdrop\Post\display_author( [ 'before' => Generosity\Tools\Svg::display( 'meta-icons', 'user' ) ] ); ?>
-		 	<?php Backdrop\Post\display_date( [ 'before' => Generosity\Tools\Svg::display( 'meta-icons', 'calendar' ) ] ); ?>
-			<?php Backdrop\Post\display_comments_link( [ 'before' => Generosity\Tools\Svg::display( 'meta-icons', 'comment' ) ] ); ?>
+			<?php Backdrop\Post\display_author( [ 'class' => 'entry-author', 'before' => Generosity\Tools\Svg::display( 'meta-icons', 'user' ) ] ); ?>
+		 	<?php Backdrop\Post\display_date( [ 'class' => 'entry-published', 'before' => Generosity\Tools\Svg::display( 'meta-icons', 'calendar' ) ] ); ?>
+			<?php Backdrop\Post\display_comments_link( [ 'class' => 'entry-comments', 'before' => Generosity\Tools\Svg::display( 'meta-icons', 'comment' ) ] ); ?>
 		</div>
 	</header>
 	<?php if ( has_post_thumbnail() ) : ?>

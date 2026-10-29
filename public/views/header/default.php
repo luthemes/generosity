@@ -11,7 +11,8 @@
 		<div class="site-header__container">
 			<div class="site-header__branding">
 				<?php Backdrop\Site\display_title( [
-					'class' => 'site-header__title',
+					'tag'        => is_front_page() ? 'h1' : 'div',
+					'class'      => 'site-header__title',
 					'link_class' => 'site-header__title-link'
 				] ); ?>
 				<?php

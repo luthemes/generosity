@@ -17,7 +17,7 @@
 # be access via the `Backdrop\app();` function or the `Backdrop\App` static class after
 # the application has been booted.
 
-$theme = new Backdrop\Core\Application();
+$theme = function_exists( 'Backdrop\booted' ) && Backdrop\booted() ? Backdrop\app() : new Backdrop\Core\Application();
 
 # ------------------------------------------------------------------------------
 # Register default service providers with the application.
@@ -26,6 +26,8 @@ $theme = new Backdrop\Core\Application();
 # Here are the default service providers that are essential for the theme to function
 # before booting the application. These service providers form the foundation for the
 # theme.
+// Registers the `radio-image` control type and the `Theme:` panels. Part of the framework
+// since `backdrop-dev/customize` was merged into it.
 $theme->provider( Backdrop\Customize\Provider::class );
 $theme->provider( Backdrop\Fonts\Provider::class );
 $theme->provider( Backdrop\Mix\Provider::class );

@@ -9,7 +9,7 @@
 	</header>
 	<?php if ( has_post_thumbnail() ) : ?>
 		<picture class="post-thumbnail">
-			<?php the_post_thumbnail( Generosity\Tools\Mod::get( 'theme_content_feature_image' ) ); ?>
+			<?php the_post_thumbnail( Generosity\Tools\Mod::get( 'theme_content_feature_image', Generosity\Tools\Mod::fallback( 'featured_image_size' ) ) ); ?>
 		</picture>
 	<?php endif; ?>
 	<div class="entry-content">

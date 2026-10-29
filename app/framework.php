@@ -30,7 +30,6 @@ $theme = function_exists( 'Backdrop\booted' ) && Backdrop\booted() ? Backdrop\ap
 // since `backdrop-dev/customize` was merged into it.
 $theme->provider( Backdrop\Customize\Provider::class );
 $theme->provider( Backdrop\Fonts\Provider::class );
-$theme->provider( Backdrop\Mix\Provider::class );
 
 # ------------------------------------------------------------------------------
 # Register additional service providers for the theme.
@@ -46,6 +45,7 @@ $theme->provider( Generosity\Image\Provider::class );
 $theme->provider( Generosity\Footer\Provider::class );
 $theme->provider( Generosity\Layout\Provider::class );
 $theme->provider( Generosity\Settings\Provider::class );
+$theme->provider( Generosity\Vite\Provider::class );
 # ------------------------------------------------------------------------------
 # Perform bootstrap actions.
 # ------------------------------------------------------------------------------
